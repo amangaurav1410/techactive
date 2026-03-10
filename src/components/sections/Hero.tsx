@@ -29,35 +29,30 @@ export function Hero() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="relative min-h-screen flex items-center overflow-hidden bg-[#050918]">
+        <section ref={sectionRef} className="relative min-h-screen flex items-center overflow-hidden bg-background">
             {/* High-Impact Immersive Background */}
-            <motion.div style={{ y: bgY }} className="absolute inset-0 z-0">
+            <motion.div style={{ y: bgY }} className="absolute inset-0 z-0 opacity-10">
                 <img
                     src="/img-hero-cybersec.png"
                     alt=""
-                    className="w-full h-full object-cover object-center opacity-40 scale-110"
+                    className="w-full h-full object-cover object-center scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#050918] via-[#050918]/80 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050918] via-transparent to-transparent" />
             </motion.div>
+
+            {/* Premium Animated GridOverlay */}
+            <div className="absolute inset-0 z-0 opacity-[0.25]">
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#1b18ff_1px,transparent_1px),linear-gradient(to_bottom,#1b18ff_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+            </div>
 
             {/* Glowing Atmosphere */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full">
-                <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#2F3BFF]/10 rounded-full blur-[160px]" />
-                <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-[140px]" />
+                <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#1b18ff]/20 rounded-full blur-[160px]" />
+                <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#1b18ff]/10 rounded-full blur-[140px]" />
             </div>
 
             <div className="container mx-auto px-6 relative z-10 pt-32 pb-20">
                 <motion.div style={{ y: textY, opacity }} className="max-w-4xl space-y-10">
-                    {/* Badge */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        className="inline-flex items-center gap-4 px-5 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl"
-                    >
-                        <span className="w-2 h-2 rounded-full bg-[#2F3BFF] animate-pulse" />
-                        <span className="text-[10px] font-black tracking-[0.4em] text-white uppercase italic">Enterprise OS 2.0</span>
-                    </motion.div>
+                    {/* Badge - Removed as per request */}
 
                     {/* Main Headline */}
                     <div className="space-y-4">
@@ -65,17 +60,17 @@ export function Hero() {
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                            className="text-5xl md:text-7xl font-black text-white leading-[0.85] tracking-tighter"
+                            className="text-5xl md:text-8xl font-black text-[#050918] leading-[0.8] tracking-tighter"
                         >
                             ENGINEER <br />
                             <AnimatePresence mode="wait">
                                 <motion.span
                                     key={currentWord}
-                                    initial={{ opacity: 0, y: 20, filter: "blur(12px)" }}
-                                    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                                    exit={{ opacity: 0, y: -20, filter: "blur(12px)" }}
-                                    transition={{ duration: 0.6 }}
-                                    className="text-transparent bg-clip-text bg-gradient-to-r from-[#2F3BFF] to-[#6B7FFF]"
+                                    initial={{ opacity: 0, y: 40, rotateX: -90, filter: "blur(20px)" }}
+                                    animate={{ opacity: 1, y: 0, rotateX: 0, filter: "blur(0px)" }}
+                                    exit={{ opacity: 0, y: -40, rotateX: 90, filter: "blur(20px)" }}
+                                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                                    className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#1b18ff] via-[#4D65FF] to-[#1b18ff] bg-[length:200%_auto] animate-gradient"
                                 >
                                     {words[currentWord].toUpperCase()}
                                 </motion.span>
@@ -86,7 +81,7 @@ export function Hero() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.35 }}
-                            className="text-slate-400 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl pt-4"
+                            className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl pt-4"
                         >
                             We provide the critical technical infrastructure for teams building the future. High-velocity engineering for a high-growth world.
                         </motion.p>
@@ -105,8 +100,8 @@ export function Hero() {
                             { icon: Globe, name: "Cloud" },
                             { icon: BarChart2, name: "Growth" }
                         ].map((s, i) => (
-                            <div key={i} className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-xl border border-white/5 text-[10px] font-black text-white uppercase tracking-widest cursor-default hover:bg-white/10 transition-all">
-                                <s.icon className="w-3.5 h-3.5 text-[#2F3BFF]" />
+                            <div key={i} className="flex items-center gap-2 px-4 py-2 glass rounded-xl text-[10px] font-black text-[#1b18ff] uppercase tracking-widest cursor-default hover:bg-[#1b18ff]/10 hover:border-[#1b18ff]/30 transition-all">
+                                <s.icon className="w-3.5 h-3.5 text-[#1b18ff]" />
                                 {s.name}
                             </div>
                         ))}
@@ -119,57 +114,57 @@ export function Hero() {
                         transition={{ duration: 1, delay: 0.6 }}
                         className="flex flex-col sm:flex-row gap-6"
                     >
-                        <Link href="/contact">
-                            <GradientButton className="h-16 px-12 text-sm font-black tracking-[0.2em] uppercase rounded-2xl shadow-2xl shadow-[#2F3BFF]/40">
+                        <Link href="/contact" className="z-10">
+                            <GradientButton className="h-16 px-12 text-sm font-black tracking-[0.2em] uppercase rounded-2xl shadow-2xl shadow-[#1b18ff]/40">
                                 Start Scaling
                             </GradientButton>
                         </Link>
-                        <Link href="/services" className="inline-flex items-center justify-center gap-3 h-16 px-10 text-sm font-black text-white border border-white/10 rounded-2xl hover:bg-white/5 transition-all">
+                        <Link href="/services" className="inline-flex items-center justify-center gap-3 h-16 px-10 text-sm font-black text-[#050918] border border-[#1b18ff]/20 rounded-2xl hover:bg-[#1b18ff]/5 transition-all">
                             Explore Ecosystem <ArrowRight className="w-5 h-5" />
                         </Link>
                     </motion.div>
                 </motion.div>
             </div>
 
-            {/* Dynamic Cybersecurity Visual Element */}
+
+            {/* Dynamic Cybersecurity Visual Element - Enhanced Animation */}
             <div className="absolute bottom-20 right-20 hidden xl:block">
                 <motion.div
-                    animate={{ y: [0, -40, 0], rotate: [0, 5, 0] }}
-                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                    className="relative group"
+                    animate={{
+                        y: [0, -30, 0],
+                        rotateX: [0, 5, 0],
+                        rotateY: [0, 10, 0]
+                    }}
+                    transition={{
+                        duration: 10,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                    }}
+                    className="relative group perspective-1000"
                 >
                     {/* Glowing Aura Layers */}
-                    <div className="absolute inset-x-0 inset-y-0 bg-[#2F3BFF]/30 rounded-full blur-[100px] -z-10 animate-pulse" />
+                    <div className="absolute inset-x-0 inset-y-0 bg-[#1b18ff]/30 rounded-full blur-[100px] -z-10 animate-pulse" />
                     <div className="absolute inset-[-20%] bg-cyan-500/10 rounded-full blur-[80px] -z-10" />
 
                     {/* The Circular Scanner / Protector */}
-                    <div className="relative w-80 h-80 rounded-full border border-white/10 bg-[#0b0f2f]/60 backdrop-blur-3xl overflow-hidden flex items-center justify-center shadow-[0_0_80px_rgba(47,59,255,0.3)]">
-                        {/* Outer Slow Rotating Ring */}
+                    <div className="relative w-80 h-80 rounded-full border border-white/10 bg-background/60 backdrop-blur-3xl overflow-hidden flex items-center justify-center shadow-[0_0_80px_rgba(27,24,255,0.3)]">
+                        {/* Technical Decorative Rings */}
                         <motion.div
                             animate={{ rotate: 360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                            className="absolute inset-[2%] border border-[#2F3BFF]/10 rounded-full"
+                            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                            className="absolute inset-[2%] border border-[#1b18ff]/20 border-dashed rounded-full"
                         />
-
-                        {/* Middle Faster Rotating Ring (Counter-Clockwise) */}
                         <motion.div
                             animate={{ rotate: -360 }}
-                            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                            className="absolute inset-[15%] border-2 border-dashed border-[#2F3BFF]/25 rounded-full"
-                        />
-
-                        {/* Fast Inner Accent Ring */}
-                        <motion.div
-                            animate={{ rotate: 360 }}
-                            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                            className="absolute inset-[30%] border border-cyan-400/20 rounded-full"
+                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                            className="absolute inset-[10%] border-2 border-[#1b18ff]/10 rounded-full"
                         />
 
                         {/* Scanner Beam */}
                         <motion.div
                             animate={{ top: ["-100%", "200%"] }}
                             transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
-                            className="absolute inset-x-0 h-4 bg-gradient-to-b from-transparent via-[#2F3BFF]/40 to-transparent z-20"
+                            className="absolute inset-x-0 h-4 bg-gradient-to-b from-transparent via-[#1b18ff]/40 to-transparent z-20"
                         />
 
                         {/* The Shield Image */}
@@ -180,17 +175,17 @@ export function Hero() {
                         />
 
                         {/* Status Overlay */}
-                        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-[#050918]/90 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/10 flex items-center gap-2.5 shadow-2xl">
+                        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/10 flex items-center gap-2.5 shadow-2xl">
                             <span className="relative flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2F3BFF] opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#2F3BFF]"></span>
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1b18ff] opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#1b18ff]"></span>
                             </span>
-                            <span className="text-[10px] font-black tracking-[0.2em] text-[#6B7FFF] uppercase">Active Protection</span>
+                            <span className="text-[10px] font-black tracking-[0.2em] text-white uppercase">Active Protection</span>
                         </div>
                     </div>
 
-                    {/* Orbiting Data Particles */}
-                    {[80, 120, 160].map((dist, i) => (
+                    {/* Orbiting Particles */}
+                    {[80, 120, 160, 200].map((dist, i) => (
                         <motion.div
                             key={i}
                             animate={{ rotate: i % 2 === 0 ? 360 : -360 }}
@@ -198,24 +193,24 @@ export function Hero() {
                             className="absolute inset-0 pointer-events-none"
                         >
                             <div
-                                className="w-1.5 h-1.5 rounded-full bg-[#2F3BFF] shadow-[0_0_10px_rgba(47,59,255,0.8)]"
+                                className="w-1.5 h-1.5 rounded-full bg-[#1b18ff] shadow-[0_0_15px_rgba(27,24,255,0.8)]"
                                 style={{ transform: `translateX(${dist}px)` }}
                             />
                         </motion.div>
                     ))}
-
-
                 </motion.div>
             </div>
 
             {/* Vertical Scroll Indicator */}
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+                <span className="text-[10px] font-black tracking-[0.4em] uppercase text-[#1b18ff] rotate-90 mb-4 opacity-50">Discovery</span>
                 <motion.div
-                    animate={{ height: [40, 80, 40], opacity: [0.2, 0.5, 0.2] }}
+                    animate={{ height: [40, 80, 40], opacity: [0.3, 0.8, 0.3] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="w-[1px] bg-gradient-to-b from-[#2F3BFF] to-transparent"
+                    className="w-[1px] bg-gradient-to-b from-[#1b18ff] to-transparent"
                 />
             </div>
         </section >
+
     );
 }

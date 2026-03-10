@@ -43,24 +43,24 @@ const doubleTestimonials = [...testimonials, ...testimonials];
 
 export function Testimonials() {
     return (
-        <section className="py-24 bg-brand-navy overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-white/5" />
+        <section className="py-24 bg-background overflow-hidden relative">
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-[#1b18ff]/10" />
 
             <div className="container mx-auto px-6 relative z-10 mb-20">
                 <div className="text-center">
                     <motion.p
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        className="text-xs font-black uppercase tracking-[0.4em] text-[#2F3BFF] mb-4"
+                        className="text-xs font-black uppercase tracking-[0.4em] text-[#1b18ff] mb-4"
                     >
                         Client Success Stories
                     </motion.p>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-6xl font-black text-white tracking-tighter"
+                        className="text-4xl md:text-6xl font-black text-[#050918] tracking-tighter"
                     >
-                        Trusted by the world's <br /> <span className="text-[#2F3BFF]">most ambitious</span> teams.
+                        Trusted by the world's <br /> <span className="text-[#1b18ff]">most ambitious</span> teams.
                     </motion.h2>
                 </div>
             </div>
@@ -82,7 +82,7 @@ export function Testimonials() {
                     {doubleTestimonials.map((t, i) => (
                         <div
                             key={i}
-                            className="w-[450px] shrink-0 bg-white/5 backdrop-blur-3xl border border-white/10 rounded-[3rem] p-10 flex flex-col gap-8 transition-all duration-500 hover:bg-white/10 hover:border-[#2F3BFF]/30"
+                            className="w-[450px] shrink-0 glass-card rounded-[3rem] p-10 flex flex-col gap-8 transition-all duration-500 hover:border-[#1b18ff]/30"
                         >
                             {/* Stars */}
                             <div className="flex items-center gap-1">
@@ -92,22 +92,22 @@ export function Testimonials() {
                             </div>
 
                             {/* Quote */}
-                            <p className="text-white text-lg font-medium leading-relaxed whitespace-normal italic">
+                            <p className="text-[#050918] text-lg font-medium leading-relaxed whitespace-normal italic">
                                 "{t.text}"
                             </p>
 
-                            <div className="mt-auto flex items-center justify-between gap-6 pt-8 border-t border-white/10">
+                            <div className="mt-auto flex items-center justify-between gap-6 pt-8 border-t border-[#1b18ff]/10">
                                 <div className="flex items-center gap-4">
                                     <div className="w-14 h-14 rounded-2xl overflow-hidden border-2 border-white/10 shrink-0">
                                         <img src={t.image} alt={t.author} className="w-full h-full object-cover grayscale" />
                                     </div>
                                     <div>
-                                        <p className="font-black text-white text-base">{t.author}</p>
-                                        <p className="text-[#2F3BFF] text-xs font-black uppercase tracking-widest">{t.company}</p>
+                                        <p className="font-black text-[#050918] text-base">{t.author}</p>
+                                        <p className="text-[#1b18ff] text-xs font-black uppercase tracking-widest">{t.company}</p>
                                     </div>
                                 </div>
-                                <div className="px-4 py-2 bg-[#2F3BFF]/20 rounded-xl">
-                                    <span className="text-[10px] font-black text-[#2F3BFF] tracking-tighter whitespace-nowrap">{t.metric}</span>
+                                <div className="px-4 py-2 bg-[#1b18ff]/20 rounded-xl">
+                                    <span className="text-[10px] font-black text-[#1b18ff] tracking-tighter whitespace-nowrap">{t.metric}</span>
                                 </div>
                             </div>
                         </div>
@@ -115,15 +115,15 @@ export function Testimonials() {
                 </motion.div>
 
                 {/* Gradient Fades for Carousel */}
-                <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-brand-navy to-transparent z-20" />
-                <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-brand-navy to-transparent z-20" />
+                <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-background to-transparent z-20" />
+                <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-background to-transparent z-20" />
             </div>
 
             {/* Sub-note */}
             <div className="container mx-auto px-6 pt-16">
                 <div className="flex flex-wrap justify-center gap-12 opacity-30 grayscale">
                     {["Google Cloud", "Amazon AWS", "Snowflake", "Vercel", "Datadog"].map((name) => (
-                        <span key={name} className="text-sm font-black text-white tracking-[0.3em] uppercase">{name}</span>
+                        <span key={name} className="text-sm font-black text-[#050918] tracking-[0.3em] uppercase">{name}</span>
                     ))}
                 </div>
             </div>

@@ -27,7 +27,7 @@ export default function ITServicesPage() {
         <div className="min-h-screen">
             <PageHero
                 badge="Infrastructure Excellence"
-                title={<>Modern IT Solutions <br /><span className="text-[#2F3BFF]">For Enterprise Scale.</span></>}
+                title={<>Modern IT Solutions <br /><span className="text-[#1b18ff]">For Enterprise Scale.</span></>}
                 subtitle="We architect reliable, scalable, and secure IT ecosystems that form the backbone of your business's success in the digital age."
                 image="/img-it-services.png"
             >
@@ -39,20 +39,20 @@ export default function ITServicesPage() {
             </PageHero>
 
             {/* IT Services Grid */}
-            <section className="py-28 bg-white">
+            <section className="py-28 bg-background">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16 max-w-2xl mx-auto">
-                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#2F3BFF] mb-3">What We Offer</p>
-                        <h2 className="text-3xl md:text-5xl font-black text-[#0b0f2f] mb-4">End-to-End Managed Solutions.</h2>
+                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">What We Offer</p>
+                        <h2 className="text-3xl md:text-5xl font-black text-[#050918] mb-4">End-to-End Managed Solutions.</h2>
                         <p className="text-slate-500 font-medium">Expert management of your technical infrastructure so you can focus on building your business.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {itServices.map((s, i) => (
-                            <div key={i} className="group p-10 bg-[#F5F7FB] border border-slate-100 rounded-3xl hover:border-[#2F3BFF]/20 hover:shadow-2xl hover:shadow-[#2F3BFF]/5 transition-all duration-500">
-                                <div className="w-14 h-14 bg-[#2F3BFF]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#2F3BFF] transition-colors duration-500">
-                                    <s.icon className="w-7 h-7 text-[#2F3BFF] group-hover:text-white transition-colors duration-500" />
+                            <div key={i} className="group p-10 bg-background border border-slate-100 rounded-3xl hover:border-[#1b18ff]/20 hover:shadow-2xl hover:shadow-[#1b18ff]/5 transition-all duration-500">
+                                <div className="w-14 h-14 bg-[#1b18ff]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1b18ff] transition-colors duration-500">
+                                    <s.icon className="w-7 h-7 text-[#1b18ff] group-hover:text-white transition-colors duration-500" />
                                 </div>
-                                <h4 className="text-xl font-bold text-[#0b0f2f] mb-3 group-hover:text-[#2F3BFF] transition-colors">{s.title}</h4>
+                                <h4 className="text-xl font-bold text-[#050918] mb-3 group-hover:text-[#1b18ff] transition-colors">{s.title}</h4>
                                 <p className="text-slate-500 font-medium leading-relaxed text-sm">{s.description}</p>
                             </div>
                         ))}
@@ -61,31 +61,31 @@ export default function ITServicesPage() {
             </section>
 
             {/* Uptime + Image Section */}
-            <section className="py-28 bg-[#F5F7FB]">
+            <section className="py-28 bg-background">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Image */}
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
                             <img src="/img-it-services.png" alt="Data Center" className="w-full h-full object-cover" />
-                            <div className="absolute inset-0 bg-gradient-to-tr from-[#0b0f2f]/40 to-transparent" />
+                            <div className="absolute inset-0 bg-gradient-to-tr from-[#050918]/40 to-transparent" />
                         </div>
 
                         {/* Content */}
                         <div className="space-y-8">
                             <div>
-                                <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#2F3BFF] mb-3">Our Guarantee</p>
-                                <h2 className="text-3xl md:text-5xl font-black text-[#0b0f2f] mb-6">Reliability is Our Standard.</h2>
+                                <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">Our Guarantee</p>
+                                <h2 className="text-3xl md:text-5xl font-black text-[#050918] mb-6">Reliability is Our Standard.</h2>
                                 <p className="text-lg text-slate-500 leading-relaxed font-medium mb-8">
                                     Modern business moves at the speed of light. Your infrastructure shouldn't be what holds you back. We ensure your systems are robust, scalable, and resilient to any challenge.
                                 </p>
                             </div>
 
-                            <div className="bg-[#0b0f2f] text-white p-8 rounded-3xl space-y-4">
+                            <div className="bg-background text-white p-8 rounded-3xl space-y-4">
                                 <h3 className="text-2xl font-black mb-6">99.99% Uptime. Always Active.</h3>
                                 <ul className="space-y-4">
                                     {features.map((f, i) => (
                                         <li key={i} className="flex items-center gap-4 font-semibold">
-                                            <CheckCircle2 className="w-5 h-5 text-[#2F3BFF] shrink-0" />
+                                            <CheckCircle2 className="w-5 h-5 text-[#1b18ff] shrink-0" />
                                             {f}
                                         </li>
                                     ))}

@@ -4,7 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingCTA } from "@/components/shared/FloatingCTA";
 
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter, Outfit } from "next/font/google";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -15,6 +15,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 
@@ -54,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${plusJakartaSans.variable} ${inter.variable} antialiased selection:bg-brand-blue selection:text-white font-inter`}
+        className={`${plusJakartaSans.variable} ${inter.variable} ${outfit.variable} antialiased selection:bg-brand-blue selection:text-white font-inter`}
       >
         <Navbar />
         <main className="min-h-screen">

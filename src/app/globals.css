@@ -28,11 +28,11 @@
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
 
-  --color-brand-blue: #2F3BFF;
-  --color-brand-blue-dark: #1D27FF;
-  --color-brand-navy: #0B0F2F;
-  --color-brand-bg: #F5F7FB;
-  --color-brand-text: #0A0A0A;
+  --color-brand-blue: #1b18ff;
+  --color-brand-blue-dark: #1b18ff;
+  --color-brand-navy: #050918;
+  --color-brand-bg: #e1efff;
+  --color-brand-text: #050918;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -42,41 +42,42 @@
 }
 
 :root {
-  --background: #F5F7FB;
-  --foreground: #0A0A0A;
+  --background: #e1efff;
+  --foreground: #050918;
   --card: #FFFFFF;
-  --card-foreground: #0A0A0A;
+  --card-foreground: #050918;
   --popover: #FFFFFF;
-  --popover-foreground: #0A0A0A;
-  --primary: #2F3BFF;
+  --popover-foreground: #050918;
+  --primary: #1b18ff;
   --primary-foreground: #FFFFFF;
-  --secondary: #0B0F2F;
+  --secondary: #050918;
   --secondary-foreground: #FFFFFF;
   --muted: #E2E8F0;
   --muted-foreground: #475569;
-  --accent: #F1F5F9;
-  --accent-foreground: #0B0F2F;
+  --accent: #E6F0FF;
+  --accent-foreground: #050918;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   --border: #E2E8F0;
   --input: #E2E8F0;
-  --ring: #2F3BFF;
+  --ring: #1b18ff;
   --radius: 1rem;
 
   --font-inter: var(--font-inter);
   --font-jakarta: var(--font-jakarta);
+  --font-outfit: var(--font-outfit);
 }
 
 .dark {
-  --background: #0B0F2F;
+  --background: #050918;
   --foreground: #F5F7FB;
   --card: #151B47;
   --card-foreground: #F5F7FB;
-  --popover: #0B0F2F;
+  --popover: #050918;
   --popover-foreground: #F5F7FB;
-  --primary: #2F3BFF;
+  --primary: #1b18ff;
   --primary-foreground: #FFFFFF;
-  --secondary: #1D27FF;
+  --secondary: #1b18ff;
   --secondary-foreground: #FFFFFF;
   --muted: #1E293B;
   --muted-foreground: #94A3B8;
@@ -86,7 +87,7 @@
   --destructive-foreground: #F5F7FB;
   --border: #1E293B;
   --input: #1E293B;
-  --ring: #2F3BFF;
+  --ring: #1b18ff;
 }
 
 @layer base {
@@ -106,18 +107,18 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-    @apply font-bold tracking-tight text-brand-navy;
+    font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+    @apply uppercase tracking-tight font-black;
   }
 }
 
 @layer utilities {
   .bg-brand-gradient {
-    background: linear-gradient(135deg, #2F3BFF 0%, #1D27FF 100%);
+    background: linear-gradient(135deg, #1b18ff 0%, #3e3bff 100%);
   }
 
   .bg-mesh {
-    background-color: #0b0f2f;
+    background-color: #050918;
     background-image:
       radial-gradient(at 0% 0%, hsla(240, 100%, 70%, 0.15) 0px, transparent 50%),
       radial-gradient(at 50% 0%, hsla(260, 100%, 70%, 0.1) 0px, transparent 50%),
@@ -125,7 +126,7 @@
   }
 
   .text-glow {
-    text-shadow: 0 0 30px rgba(47, 59, 255, 0.5);
+    text-shadow: 0 0 30px rgba(27, 24, 255, 0.5);
   }
 
   .text-glow-white {
@@ -133,17 +134,25 @@
   }
 
   .glass {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(27, 24, 255, 0.05);
   }
 
   .glass-dark {
-    background: rgba(11, 15, 47, 0.4);
+    background: rgba(5, 9, 24, 0.6);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .noise-overlay::before {
@@ -166,7 +175,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(800px circle at var(--x, 50%) var(--y, 50%), rgba(47, 59, 255, 0.1), transparent 40%);
+    background: radial-gradient(800px circle at var(--x, 50%) var(--y, 50%), rgba(27, 24, 255, 0.1), transparent 40%);
     pointer-events: none;
     z-index: 2;
   }

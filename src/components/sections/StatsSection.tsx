@@ -34,11 +34,11 @@ function StatItem({ value, suffix, label, description }: StatItemProps) {
     }, [inView, value]);
 
     return (
-        <div ref={ref} className="group text-center md:text-left py-10 px-8 border-r border-b border-white/[0.06] last:border-r-0 odd:last:border-r-0 hover:bg-white/[0.03] transition-colors">
-            <p className="text-5xl md:text-6xl font-black text-white tracking-tight group-hover:text-[#2F3BFF] transition-colors duration-500">
+        <div ref={ref} className="group text-center md:text-left py-10 px-8 border-r border-b border-[#1b18ff]/10 last:border-r-0 odd:last:border-r-0 hover:bg-[#1b18ff]/5 transition-colors">
+            <p className="text-5xl md:text-6xl font-black text-[#050918] tracking-tight group-hover:text-[#1b18ff] transition-colors duration-500">
                 {count}{suffix}
             </p>
-            <p className="text-base font-black text-white mt-2 mb-2">{label}</p>
+            <p className="text-base font-black text-[#050918] mt-2 mb-2">{label}</p>
             <p className="text-xs text-slate-500 font-medium leading-relaxed">{description}</p>
         </div>
     );
@@ -73,11 +73,11 @@ const stats = [
 
 export function StatsSection() {
     return (
-        <section className="py-28 bg-white border-t border-slate-100">
+        <section className="py-28 bg-background border-t border-[#1b18ff]/10">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#2F3BFF] mb-3">By the Numbers</p>
-                    <h2 className="text-3xl md:text-5xl font-black text-[#0b0f2f]">
+                    <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">By the Numbers</p>
+                    <h2 className="text-3xl md:text-5xl font-black text-[#050918]">
                         A Decade of Measurable Impact.
                     </h2>
                     <p className="mt-4 text-slate-500 font-medium max-w-xl mx-auto">
@@ -85,7 +85,7 @@ export function StatsSection() {
                     </p>
                 </div>
 
-                <div className="border border-slate-100 rounded-3xl overflow-hidden bg-[#0b0f2f] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="glass-card rounded-[3rem] overflow-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     {stats.map((s, i) => (
                         <motion.div
                             key={i}

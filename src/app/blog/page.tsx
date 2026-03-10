@@ -85,13 +85,13 @@ export default function BlogPage() {
         <div className="min-h-screen bg-white">
             <PageHero
                 badge="Industry Knowledge Hub"
-                title={<>TechActive <span className="text-[#2F3BFF]">Journal.</span></>}
+                title={<>TechActive <span className="text-[#1b18ff]">Journal.</span></>}
                 subtitle="Expert insights on enterprise technology, cybersecurity, cloud architecture, digital marketing, and engineering — written by practitioners, not theorists."
                 image="/img-blog-hero.png"
             >
                 <div className="flex flex-wrap justify-center gap-3 mt-2">
                     {["Cybersecurity", "Cloud", "AI & ML", "Marketing", "Engineering"].map((tag) => (
-                        <span key={tag} className="px-4 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs font-bold text-white/70 uppercase tracking-widest hover:bg-[#2F3BFF]/30 hover:text-white transition-all cursor-pointer">
+                        <span key={tag} className="px-4 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs font-bold text-white/70 uppercase tracking-widest hover:bg-[#1b18ff]/30 hover:text-white transition-all cursor-pointer">
                             {tag}
                         </span>
                     ))}
@@ -102,8 +102,8 @@ export default function BlogPage() {
             <section className="py-24 border-b border-slate-100">
                 <div className="container mx-auto px-6">
                     <div className="flex items-center gap-3 mb-10">
-                        <div className="w-8 h-[2px] bg-[#2F3BFF]" />
-                        <p className="text-xs font-black uppercase tracking-[0.3em] text-[#2F3BFF]">Editor's Pick</p>
+                        <div className="w-8 h-[2px] bg-[#1b18ff]" />
+                        <p className="text-xs font-black uppercase tracking-[0.3em] text-[#1b18ff]">Editor's Pick</p>
                     </div>
 
                     <Link href={`/blog/${featuredPost.slug}`} className="group grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -114,9 +114,9 @@ export default function BlogPage() {
                                 alt={featuredPost.title}
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-tr from-[#0b0f2f]/50 to-transparent" />
+                            <div className="absolute inset-0 bg-gradient-to-tr from-[#050918]/50 to-transparent" />
                             <div className="absolute top-6 left-6">
-                                <span className="px-4 py-1.5 rounded-full bg-[#2F3BFF] text-xs font-black text-white uppercase tracking-widest">
+                                <span className="px-4 py-1.5 rounded-full bg-[#1b18ff] text-xs font-black text-white uppercase tracking-widest">
                                     {featuredPost.category}
                                 </span>
                             </div>
@@ -128,7 +128,7 @@ export default function BlogPage() {
                                 <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" /> {featuredPost.date}</span>
                                 <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" /> {featuredPost.readTime}</span>
                             </div>
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#0b0f2f] leading-[1.08] group-hover:text-[#2F3BFF] transition-colors duration-500">
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#050918] leading-[1.08] group-hover:text-[#1b18ff] transition-colors duration-500">
                                 {featuredPost.title}
                             </h2>
                             <p className="text-lg text-slate-500 font-medium leading-relaxed">
@@ -139,10 +139,10 @@ export default function BlogPage() {
                                     <img src="/img-avatar-1.png" alt={featuredPost.author} className="w-full h-full object-cover" />
                                 </div>
                                 <div>
-                                    <p className="text-sm font-black text-[#0b0f2f]">{featuredPost.author}</p>
+                                    <p className="text-sm font-black text-[#050918]">{featuredPost.author}</p>
                                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{featuredPost.authorRole}</p>
                                 </div>
-                                <div className="ml-auto inline-flex items-center gap-2 text-sm font-black text-[#2F3BFF] group-hover:gap-3 transition-all">
+                                <div className="ml-auto inline-flex items-center gap-2 text-sm font-black text-[#1b18ff] group-hover:gap-3 transition-all">
                                     Read Article <ArrowRight className="w-4 h-4" />
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ export default function BlogPage() {
             </section>
 
             {/* Filters */}
-            <section className="py-6 bg-[#F5F7FB] border-b border-slate-100 sticky top-[70px] z-40">
+            <section className="py-6 bg-background border-b border-slate-100 sticky top-[70px] z-40">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
                         {/* Category tabs */}
@@ -162,8 +162,8 @@ export default function BlogPage() {
                                     key={cat}
                                     onClick={() => setActiveCategory(cat)}
                                     className={`px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-200 ${activeCategory === cat
-                                            ? "bg-[#2F3BFF] text-white shadow-md shadow-[#2F3BFF]/30"
-                                            : "bg-white border border-slate-200 text-slate-500 hover:text-[#2F3BFF] hover:border-[#2F3BFF]/20"
+                                            ? "bg-[#1b18ff] text-white shadow-md shadow-[#1b18ff]/30"
+                                            : "bg-white border border-slate-200 text-slate-500 hover:text-[#1b18ff] hover:border-[#1b18ff]/20"
                                         }`}
                                 >
                                     {cat}
@@ -179,7 +179,7 @@ export default function BlogPage() {
                                 placeholder="Search articles..."
                                 value={searchQuery}
                                 onChange={e => setSearchQuery(e.target.value)}
-                                className="w-full h-10 bg-white border border-slate-200 rounded-full pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#2F3BFF]/20 font-medium text-slate-600 placeholder:text-slate-400"
+                                className="w-full h-10 bg-white border border-slate-200 rounded-full pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#1b18ff]/20 font-medium text-slate-600 placeholder:text-slate-400"
                             />
                         </div>
                     </div>
@@ -201,7 +201,7 @@ export default function BlogPage() {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.4, delay: i * 0.07 }}
-                                    className="group flex flex-col bg-[#F5F7FB] border border-slate-100 rounded-3xl overflow-hidden hover:shadow-2xl hover:shadow-[#2F3BFF]/5 hover:-translate-y-1 transition-all duration-500"
+                                    className="group flex flex-col bg-background border border-slate-100 rounded-3xl overflow-hidden hover:shadow-2xl hover:shadow-[#1b18ff]/5 hover:-translate-y-1 transition-all duration-500"
                                 >
                                     {/* Image */}
                                     <div className="relative overflow-hidden h-52">
@@ -210,9 +210,9 @@ export default function BlogPage() {
                                             alt={post.title}
                                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f2f]/50 to-transparent" />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-[#050918]/50 to-transparent" />
                                         <div className="absolute top-4 left-4">
-                                            <span className="px-3 py-1 rounded-full bg-white/95 text-[10px] font-black text-[#0b0f2f] uppercase tracking-widest">
+                                            <span className="px-3 py-1 rounded-full bg-white/95 text-[10px] font-black text-[#050918] uppercase tracking-widest">
                                                 {post.category}
                                             </span>
                                         </div>
@@ -225,7 +225,7 @@ export default function BlogPage() {
                                             <span className="flex items-center gap-1.5"><Clock className="w-3 h-3" /> {post.readTime}</span>
                                         </div>
 
-                                        <h3 className="text-lg font-black text-[#0b0f2f] mb-3 leading-tight group-hover:text-[#2F3BFF] transition-colors">
+                                        <h3 className="text-lg font-black text-[#050918] mb-3 leading-tight group-hover:text-[#1b18ff] transition-colors">
                                             <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                                         </h3>
 
@@ -239,7 +239,7 @@ export default function BlogPage() {
                                             </div>
                                             <Link
                                                 href={`/blog/${post.slug}`}
-                                                className="inline-flex items-center gap-1 text-xs font-black text-[#2F3BFF] group-hover:gap-2 transition-all"
+                                                className="inline-flex items-center gap-1 text-xs font-black text-[#1b18ff] group-hover:gap-2 transition-all"
                                             >
                                                 Read <ArrowRight className="w-3.5 h-3.5" />
                                             </Link>
@@ -256,8 +256,8 @@ export default function BlogPage() {
                             <button
                                 key={p}
                                 className={`w-11 h-11 rounded-xl border text-sm font-black transition-all ${p === "1"
-                                        ? "bg-[#2F3BFF] text-white border-[#2F3BFF] shadow-md shadow-[#2F3BFF]/30"
-                                        : "bg-white border-slate-200 text-slate-400 hover:border-[#2F3BFF] hover:text-[#2F3BFF]"
+                                        ? "bg-[#1b18ff] text-white border-[#1b18ff] shadow-md shadow-[#1b18ff]/30"
+                                        : "bg-white border-slate-200 text-slate-400 hover:border-[#1b18ff] hover:text-[#1b18ff]"
                                     }`}
                             >
                                 {p}
@@ -268,7 +268,7 @@ export default function BlogPage() {
             </section>
 
             {/* Newsletter CTA */}
-            <section className="py-20 bg-[#0b0f2f]">
+            <section className="py-20 bg-background">
                 <div className="container mx-auto px-6 text-center">
                     <div className="max-w-2xl mx-auto">
                         <p className="text-xs font-black uppercase tracking-[0.3em] text-[#6B7FFF] mb-4">Stay Informed</p>
@@ -282,9 +282,9 @@ export default function BlogPage() {
                             <input
                                 type="email"
                                 placeholder="Enter your work email"
-                                className="flex-1 h-12 rounded-xl px-5 bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#2F3BFF]/40 font-medium text-sm"
+                                className="flex-1 h-12 rounded-xl px-5 bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#1b18ff]/40 font-medium text-sm"
                             />
-                            <button className="h-12 px-7 bg-[#2F3BFF] text-white font-black text-sm rounded-xl hover:bg-[#4551FF] transition-colors shrink-0">
+                            <button className="h-12 px-7 bg-[#1b18ff] text-white font-black text-sm rounded-xl hover:bg-[#4551FF] transition-colors shrink-0">
                                 Subscribe →
                             </button>
                         </div>

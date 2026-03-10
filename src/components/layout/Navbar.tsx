@@ -47,8 +47,8 @@ export function Navbar() {
                 <div className={cn(
                     "mx-auto transition-all duration-500 flex items-center justify-between",
                     isScrolled
-                        ? "max-w-7xl bg-[#0b0f2f]/95 backdrop-blur-xl border border-white/10 rounded-2xl px-6 md:px-8 py-3 shadow-[0_8px_40px_rgba(47,59,255,0.15)]"
-                        : "bg-[#0b0f2f]/70 backdrop-blur-md py-4 px-6 md:px-10 border-b border-white/[0.06]"
+                        ? "max-w-7xl glass rounded-2xl px-6 md:px-8 py-3 shadow-[0_8px_40px_rgba(27,24,255,0.1)]"
+                        : "bg-background/70 backdrop-blur-md py-4 px-6 md:px-10 border-b border-[#1b18ff]/10"
                 )}>
                     {/* Logo */}
                     <Link href="/" className="flex items-center shrink-0">
@@ -57,7 +57,7 @@ export function Navbar() {
                             alt="TechActive Logo"
                             width={160}
                             height={44}
-                            className="h-9 w-auto brightness-0 invert"
+                            className="h-9 w-auto"
                             priority
                         />
                     </Link>
@@ -71,8 +71,8 @@ export function Navbar() {
                                 className={cn(
                                     "px-4 py-2 rounded-lg text-[11px] font-bold uppercase tracking-widest transition-all duration-200",
                                     isActive(link.href)
-                                        ? "text-white bg-white/10"
-                                        : "text-slate-400 hover:text-white hover:bg-white/5"
+                                        ? "text-white bg-[#1b18ff]"
+                                        : "text-slate-600 hover:text-[#1b18ff] hover:bg-[#1b18ff]/5"
                                 )}
                             >
                                 {link.name}
@@ -91,7 +91,7 @@ export function Navbar() {
 
                     {/* Mobile toggle */}
                     <button
-                        className="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
+                        className="md:hidden text-[#050918] p-2 rounded-lg hover:bg-[#1b18ff]/5 transition-colors"
                         onClick={() => setMobileOpen(!mobileOpen)}
                         aria-label="Toggle menu"
                     >
@@ -102,10 +102,10 @@ export function Navbar() {
 
             {/* Mobile Menu */}
             <div className={cn(
-                "fixed inset-0 z-40 bg-[#0b0f2f] flex flex-col pt-24 px-8 pb-10 transition-all duration-300",
+                "fixed inset-0 z-40 bg-background flex flex-col pt-24 px-8 pb-10 transition-all duration-300",
                 mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
             )}>
-                <div className="absolute top-0 right-0 w-72 h-72 bg-[#2F3BFF]/20 rounded-full blur-[120px]" />
+                <div className="absolute top-0 right-0 w-72 h-72 bg-[#1b18ff]/20 rounded-full blur-[120px]" />
 
                 <div className="mb-10">
                     <Image
@@ -113,7 +113,7 @@ export function Navbar() {
                         alt="TechActive"
                         width={140}
                         height={38}
-                        className="h-8 w-auto brightness-0 invert"
+                        className="h-8 w-auto"
                     />
                 </div>
 
@@ -123,8 +123,8 @@ export function Navbar() {
                             key={link.href}
                             href={link.href}
                             className={cn(
-                                "text-2xl font-black py-4 border-b border-white/5 transition-colors",
-                                isActive(link.href) ? "text-[#2F3BFF]" : "text-white hover:text-[#2F3BFF]"
+                                "text-2xl font-black py-4 border-b border-[#1b18ff]/10 transition-colors",
+                                isActive(link.href) ? "text-[#1b18ff]" : "text-[#050918] hover:text-[#1b18ff]"
                             )}
                         >
                             {link.name}

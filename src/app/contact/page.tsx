@@ -42,12 +42,12 @@ export default function ContactPage() {
         <div className="min-h-screen">
             <PageHero
                 badge="Get In Touch"
-                title={<>Let's <span className="text-[#2F3BFF]">Innovate</span> Together.</>}
+                title={<>Let's <span className="text-[#1b18ff]">Innovate</span> Together.</>}
                 subtitle="Ready to scale your enterprise technology? Get in touch for a free consultation with our experts."
                 image="/img-contact.png"
             />
 
-            <div className="bg-white pb-28">
+            <div className="bg-background pb-28">
                 <div className="container mx-auto px-6 -mt-16 relative z-20">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                         {/* Contact Form */}
@@ -55,10 +55,10 @@ export default function ContactPage() {
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                className="bg-white rounded-3xl shadow-2xl border border-slate-100 p-8 md:p-12"
+                                className="glass-card rounded-3xl p-8 md:p-12"
                             >
-                                <h3 className="text-2xl font-black text-[#0b0f2f] mb-8 flex items-center gap-3">
-                                    <MessageSquare className="w-6 h-6 text-[#2F3BFF]" /> Send a Message
+                                <h3 className="text-2xl font-black text-[#050918] mb-8 flex items-center gap-3">
+                                    <MessageSquare className="w-6 h-6 text-[#1b18ff]" /> Send a Message
                                 </h3>
                                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -106,22 +106,22 @@ export default function ContactPage() {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 animate={{ opacity: 1, x: 0 }}
-                                className="bg-[#0b0f2f] rounded-3xl p-10 h-full border border-white/10 relative overflow-hidden"
+                                className="glass-card rounded-3xl p-10 h-full relative overflow-hidden"
                             >
-                                <div className="absolute top-0 right-0 w-40 h-40 bg-[#2F3BFF]/20 rounded-full translate-x-16 -translate-y-16 blur-2xl" />
+                                <div className="absolute top-0 right-0 w-40 h-40 bg-[#1b18ff]/20 rounded-full translate-x-16 -translate-y-16 blur-2xl" />
 
-                                <h3 className="text-xl font-black text-white mb-8 uppercase tracking-tight">Contact Direct</h3>
+                                <h3 className="text-xl font-black text-[#050918] mb-8 uppercase tracking-tight">Contact Direct</h3>
 
                                 <div className="space-y-8">
                                     {contactInfo.map((info, i) => (
                                         <a key={i} href={info.href} className="group block">
                                             <div className="flex items-center gap-4 mb-2">
-                                                <div className="w-10 h-10 bg-[#2F3BFF]/20 border border-[#2F3BFF]/30 rounded-xl flex items-center justify-center group-hover:bg-[#2F3BFF] transition-all duration-300">
+                                                <div className="w-10 h-10 bg-[#1b18ff]/20 border border-[#1b18ff]/30 rounded-xl flex items-center justify-center group-hover:bg-[#1b18ff] transition-all duration-300">
                                                     <info.icon className="w-4 h-4 text-[#6B7FFF] group-hover:text-white transition-colors" />
                                                 </div>
-                                                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 group-hover:text-[#2F3BFF] transition-colors">{info.label}</p>
+                                                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 group-hover:text-[#1b18ff] transition-colors">{info.label}</p>
                                             </div>
-                                            <p className="text-white font-bold pl-14 leading-snug">{info.value}</p>
+                                            <p className="text-[#050918] font-bold pl-14 leading-snug">{info.value}</p>
                                         </a>
                                     ))}
                                 </div>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                                     <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-6">Follow Us</p>
                                     <div className="flex items-center gap-4">
                                         {[Facebook, Twitter, Linkedin, Github].map((Icon, i) => (
-                                            <Link key={i} href="#" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-[#2F3BFF] hover:text-white transition-all duration-300">
+                                            <Link key={i} href="#" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-[#1b18ff] hover:text-white transition-all duration-300">
                                                 <Icon className="w-4 h-4" />
                                             </Link>
                                         ))}
@@ -139,10 +139,10 @@ export default function ContactPage() {
 
                                 {/* Location card */}
                                 <div className="mt-10 rounded-2xl overflow-hidden border border-white/10">
-                                    <div className="h-36 bg-[#2F3BFF]/10 flex items-center justify-center">
+                                    <div className="h-36 bg-[#1b18ff]/10 flex items-center justify-center">
                                         <div className="text-center space-y-3">
-                                            <MapPin className="w-8 h-8 text-[#2F3BFF] mx-auto animate-bounce" />
-                                            <p className="text-[10px] uppercase font-black tracking-widest text-white/40">Silicon Valley, CA</p>
+                                            <MapPin className="w-8 h-8 text-[#1b18ff] mx-auto animate-bounce" />
+                                            <p className="text-[10px] uppercase font-black tracking-widest text-[#050918]/40">Silicon Valley, CA</p>
                                         </div>
                                     </div>
                                 </div>

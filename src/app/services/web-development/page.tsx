@@ -26,7 +26,7 @@ export default function WebDevelopmentPage() {
         <div className="min-h-screen">
             <PageHero
                 badge="The Future of Web Development"
-                title={<>Building <span className="text-[#2F3BFF]">High-Velocity</span> <br />Web Experiences.</>}
+                title={<>Building <span className="text-[#1b18ff]">High-Velocity</span> <br />Web Experiences.</>}
                 subtitle="Next-generation web development that combines stunning aesthetics with extreme performance and security."
                 image="/img-web-dev.png"
             >
@@ -48,20 +48,20 @@ export default function WebDevelopmentPage() {
             </PageHero>
 
             {/* Web Services Grid */}
-            <section className="py-28 bg-white">
+            <section className="py-28 bg-background">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16 max-w-2xl mx-auto">
-                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#2F3BFF] mb-3">What We Build</p>
-                        <h2 className="text-3xl md:text-5xl font-black text-[#0b0f2f] mb-4">Crafting Digital Masterpieces.</h2>
+                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">What We Build</p>
+                        <h2 className="text-3xl md:text-5xl font-black text-[#050918] mb-4">Crafting Digital Masterpieces.</h2>
                         <p className="text-slate-500 font-medium leading-relaxed">Code is only part of the solution. We focus on creating experiences that engage users and drive meaningful business results.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {webServices.map((s, i) => (
-                            <div key={i} className="group p-10 bg-[#F5F7FB] border border-slate-100/50 rounded-3xl hover:bg-white hover:shadow-2xl hover:shadow-[#2F3BFF]/5 transition-all duration-500">
-                                <div className="w-14 h-14 bg-[#2F3BFF]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#2F3BFF] transition-colors duration-500">
-                                    <s.icon className="w-7 h-7 text-[#2F3BFF] group-hover:text-white transition-colors duration-500" />
+                            <div key={i} className="group p-10 bg-background border border-slate-100/50 rounded-3xl hover:bg-white hover:shadow-2xl hover:shadow-[#1b18ff]/5 transition-all duration-500">
+                                <div className="w-14 h-14 bg-[#1b18ff]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1b18ff] transition-colors duration-500">
+                                    <s.icon className="w-7 h-7 text-[#1b18ff] group-hover:text-white transition-colors duration-500" />
                                 </div>
-                                <h4 className="text-xl font-bold text-[#0b0f2f] mb-3 group-hover:text-[#2F3BFF] transition-colors">{s.title}</h4>
+                                <h4 className="text-xl font-bold text-[#050918] mb-3 group-hover:text-[#1b18ff] transition-colors">{s.title}</h4>
                                 <p className="text-slate-500 font-medium leading-relaxed text-sm">{s.description}</p>
                             </div>
                         ))}
@@ -70,7 +70,7 @@ export default function WebDevelopmentPage() {
             </section>
 
             {/* Portfolio Preview */}
-            <section className="py-28 bg-[#0b0f2f] text-white">
+            <section className="py-28 bg-background text-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#6B7FFF] mb-3">Portfolio Preview</p>
@@ -84,9 +84,9 @@ export default function WebDevelopmentPage() {
                                 className="group relative rounded-3xl overflow-hidden aspect-[4/3] bg-white/5 border border-white/10 cursor-pointer"
                             >
                                 <img src={p.img} alt={p.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
-                                <div className="absolute inset-0 bg-[#0b0f2f]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                                <div className="absolute inset-0 bg-background/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
                                     <h4 className="text-2xl font-black mb-1">{p.title}</h4>
-                                    <p className="text-sm font-bold uppercase tracking-widest text-[#2F3BFF] mb-4">{p.category}</p>
+                                    <p className="text-sm font-bold uppercase tracking-widest text-[#1b18ff] mb-4">{p.category}</p>
                                     <div className="flex items-center gap-2 text-xs font-bold text-white/70">
                                         Explore Case Study <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </div>
@@ -98,16 +98,16 @@ export default function WebDevelopmentPage() {
             </section>
 
             {/* Development Standards */}
-            <section className="py-28 bg-white">
+            <section className="py-28 bg-background">
                 <div className="container mx-auto px-6 text-center">
                     <div className="max-w-4xl mx-auto">
-                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#2F3BFF] mb-3">Our Standard</p>
-                        <h2 className="text-3xl md:text-5xl font-black text-[#0b0f2f] mb-16">The TechActive Development Standard.</h2>
+                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">Our Standard</p>
+                        <h2 className="text-3xl md:text-5xl font-black text-[#050918] mb-16">The TechActive Development Standard.</h2>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
                             {["SEO-Ready Architecture", "Mobile-First Design", "95+ Lighthouse Score", "Enterprise Security"].map((benefit, i) => (
                                 <div key={i} className="flex flex-col items-center gap-4">
-                                    <CheckCircle2 className="w-8 h-8 text-[#2F3BFF]" />
-                                    <h4 className="text-base font-bold text-[#0b0f2f] leading-tight">{benefit}</h4>
+                                    <CheckCircle2 className="w-8 h-8 text-[#1b18ff]" />
+                                    <h4 className="text-base font-bold text-[#050918] leading-tight">{benefit}</h4>
                                 </div>
                             ))}
                         </div>

@@ -6,9 +6,9 @@ export function TrustedBy() {
     ];
 
     return (
-        <section className="py-14 bg-white border-b border-slate-100">
+        <section className="py-14 bg-background border-b border-[#1b18ff]/10">
             <div className="container mx-auto px-6">
-                <p className="text-center text-[10px] font-black uppercase tracking-[0.4em] text-slate-300 mb-8">
+                <p className="text-center text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-8">
                     Integrated with the world's leading platforms
                 </p>
                 <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-5 opacity-30 grayscale">
