@@ -27,7 +27,7 @@ export default function CybersecurityPage() {
         <div className="min-h-screen">
             <PageHero
                 badge="Defend & Protect"
-                title={<>Cybersecurity <br /><span className="text-[#1b18ff]">Without Compromise.</span></>}
+                title={<>Cybersecurity <br /><span className="text-[#3b82f6]">Without Compromise.</span></>}
                 subtitle="In a digital-first world, your security is your reputation. TechActive delivers elite-level protection for your data, infrastructure, and peace of mind."
                 image="/img-hero-cybersec.png"
             >
@@ -42,15 +42,15 @@ export default function CybersecurityPage() {
             <section className="py-28 bg-background">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16 max-w-2xl mx-auto">
-                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">What We Offer</p>
+                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#3b82f6] mb-3">What We Offer</p>
                         <h2 className="text-3xl md:text-5xl font-black text-[#050918] mb-4">Comprehensive Security Solutions.</h2>
                         <p className="text-slate-500 font-medium">Protecting every layer of your technology stack with precision-engineered security protocols.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {securityServices.map((s, i) => (
                             <div key={i} className="group p-10 bg-background border border-slate-100 rounded-3xl hover:bg-background transition-all duration-500">
-                                <div className="w-14 h-14 bg-[#1b18ff]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1b18ff] transition-colors">
-                                    <s.icon className="w-7 h-7 text-[#1b18ff] group-hover:text-white transition-colors" />
+                                <div className="w-14 h-14 bg-[#3b82f6]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#3b82f6] transition-colors">
+                                    <s.icon className="w-7 h-7 text-[#3b82f6] group-hover:text-white transition-colors" />
                                 </div>
                                 <h4 className="text-xl font-bold text-[#050918] group-hover:text-white mb-3 transition-colors">{s.title}</h4>
                                 <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed font-medium text-sm transition-colors">{s.description}</p>
@@ -66,12 +66,12 @@ export default function CybersecurityPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                         <div className="space-y-10">
                             <div>
-                                <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">Why TechActive Security</p>
+                                <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#3b82f6] mb-3">Why TechActive Security</p>
                                 <h2 className="text-3xl md:text-5xl font-black text-[#050918] mb-8">Why Invest in Our Security?</h2>
                                 <ul className="space-y-5">
                                     {benefits.map((b, i) => (
                                         <li key={i} className="flex items-start gap-4">
-                                            <div className="w-6 h-6 rounded-full bg-[#1b18ff] flex items-center justify-center mt-0.5 shrink-0">
+                                            <div className="w-6 h-6 rounded-full bg-[#3b82f6] flex items-center justify-center mt-0.5 shrink-0">
                                                 <CheckCircle2 className="w-4 h-4 text-white" />
                                             </div>
                                             <span className="text-lg font-semibold text-slate-700">{b}</span>

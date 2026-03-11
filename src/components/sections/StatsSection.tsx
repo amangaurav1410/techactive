@@ -34,8 +34,8 @@ function StatItem({ value, suffix, label, description }: StatItemProps) {
     }, [inView, value]);
 
     return (
-        <div ref={ref} className="group text-center md:text-left py-10 px-8 border-r border-b border-[#1b18ff]/10 last:border-r-0 odd:last:border-r-0 hover:bg-[#1b18ff]/5 transition-colors">
-            <p className="text-5xl md:text-6xl font-black text-[#050918] tracking-tight group-hover:text-[#1b18ff] transition-colors duration-500">
+        <div ref={ref} className="group text-center md:text-left py-10 px-8 border-r border-b border-[#3b82f6]/10 last:border-r-0 odd:last:border-r-0 hover:bg-[#3b82f6]/5 transition-colors">
+            <p className="text-5xl md:text-6xl font-black text-[#050918] tracking-tight group-hover:text-[#3b82f6] transition-colors duration-500">
                 {count}{suffix}
             </p>
             <p className="text-base font-black text-[#050918] mt-2 mb-2">{label}</p>
@@ -73,10 +73,10 @@ const stats = [
 
 export function StatsSection() {
     return (
-        <section className="py-28 bg-background border-t border-[#1b18ff]/10">
+        <section className="py-28 bg-background border-t border-[#3b82f6]/10">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">By the Numbers</p>
+                    <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#3b82f6] mb-3">By the Numbers</p>
                     <h2 className="text-3xl md:text-5xl font-black text-[#050918]">
                         A Decade of Measurable Impact.
                     </h2>

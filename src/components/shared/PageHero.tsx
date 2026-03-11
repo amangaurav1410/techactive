@@ -28,16 +28,16 @@ export function PageHero({ badge, title, subtitle, image, children, className }:
             )}
 
             {/* Glowing atmosphere */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-[#1b18ff]/10 to-transparent blur-[120px] z-0" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-[#3b82f6]/10 to-transparent blur-[120px] z-0" />
 
             <div className="container mx-auto px-6 relative z-10 max-w-5xl">
                 {badge && (
                     <motion.div
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="inline-flex items-center gap-3 px-6 py-2 mb-10 text-[10px] font-black tracking-[0.4em] text-[#1b18ff] uppercase bg-[#1b18ff]/5 border border-[#1b18ff]/10 rounded-full backdrop-blur-xl"
+                        className="inline-flex items-center gap-3 px-6 py-2 mb-10 text-[10px] font-black tracking-[0.4em] text-[#3b82f6] uppercase bg-[#3b82f6]/5 border border-[#3b82f6]/10 rounded-full backdrop-blur-xl"
                     >
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#1b18ff]" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6]" />
                         {badge}
                     </motion.div>
                 )}

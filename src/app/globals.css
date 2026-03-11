@@ -28,8 +28,8 @@
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
 
-  --color-brand-blue: #1b18ff;
-  --color-brand-blue-dark: #1b18ff;
+  --color-brand-blue: #3b82f6;
+  --color-brand-blue-dark: #3b82f6;
   --color-brand-navy: #050918;
   --color-brand-bg: #e1efff;
   --color-brand-text: #050918;
@@ -48,7 +48,7 @@
   --card-foreground: #050918;
   --popover: #FFFFFF;
   --popover-foreground: #050918;
-  --primary: #1b18ff;
+  --primary: #3b82f6;
   --primary-foreground: #FFFFFF;
   --secondary: #050918;
   --secondary-foreground: #FFFFFF;
@@ -60,7 +60,7 @@
   --destructive-foreground: #FFFFFF;
   --border: #E2E8F0;
   --input: #E2E8F0;
-  --ring: #1b18ff;
+  --ring: #3b82f6;
   --radius: 1rem;
 
   --font-inter: var(--font-inter);
@@ -75,9 +75,9 @@
   --card-foreground: #F5F7FB;
   --popover: #050918;
   --popover-foreground: #F5F7FB;
-  --primary: #1b18ff;
+  --primary: #3b82f6;
   --primary-foreground: #FFFFFF;
-  --secondary: #1b18ff;
+  --secondary: #3b82f6;
   --secondary-foreground: #FFFFFF;
   --muted: #1E293B;
   --muted-foreground: #94A3B8;
@@ -87,7 +87,7 @@
   --destructive-foreground: #F5F7FB;
   --border: #1E293B;
   --input: #1E293B;
-  --ring: #1b18ff;
+  --ring: #3b82f6;
 }
 
 @layer base {
@@ -114,19 +114,19 @@
 
 @layer utilities {
   .bg-brand-gradient {
-    background: linear-gradient(135deg, #1b18ff 0%, #3e3bff 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
   }
 
   .bg-mesh {
     background-color: #050918;
     background-image:
-      radial-gradient(at 0% 0%, hsla(240, 100%, 70%, 0.15) 0px, transparent 50%),
-      radial-gradient(at 50% 0%, hsla(260, 100%, 70%, 0.1) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, hsla(280, 100%, 70%, 0.15) 0px, transparent 50%);
+      radial-gradient(at 0% 0%, hsla(217, 91%, 60%, 0.15) 0px, transparent 50%),
+      radial-gradient(at 50% 0%, hsla(217, 91%, 60%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(217, 91%, 60%, 0.15) 0px, transparent 50%);
   }
 
   .text-glow {
-    text-shadow: 0 0 30px rgba(27, 24, 255, 0.5);
+    text-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
   }
 
   .text-glow-white {
@@ -145,7 +145,7 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 8px 32px 0 rgba(27, 24, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(59, 130, 246, 0.05);
   }
 
   .glass-dark {
@@ -175,7 +175,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(800px circle at var(--x, 50%) var(--y, 50%), rgba(27, 24, 255, 0.1), transparent 40%);
+    background: radial-gradient(800px circle at var(--x, 50%) var(--y, 50%), rgba(59, 130, 246, 0.1), transparent 40%);
     pointer-events: none;
     z-index: 2;
   }

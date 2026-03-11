@@ -27,7 +27,7 @@ export default function SEOPage() {
         <div className="min-h-screen">
             <PageHero
                 badge="Dominant Organic Visibility"
-                title={<>Command the <br /><span className="text-[#1b18ff]">Search Landscape.</span></>}
+                title={<>Command the <br /><span className="text-[#3b82f6]">Search Landscape.</span></>}
                 subtitle="Expert SEO and SEM strategies designed to drive sustainable organic growth and high-conversion paid traffic for your business."
                 image="/img-seo-center.png"
             >
@@ -42,17 +42,17 @@ export default function SEOPage() {
             <section className="py-28 bg-background">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16 max-w-2xl mx-auto">
-                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">Our SEO Services</p>
+                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#3b82f6] mb-3">Our SEO Services</p>
                         <h2 className="text-3xl md:text-5xl font-black text-[#050918] mb-4">Strategic Search Dominance.</h2>
                         <p className="text-slate-500 font-medium leading-relaxed">We don't just optimize for search engines; we optimize for humans and search engines together.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {seoServices.map((s, i) => (
-                            <div key={i} className="group p-10 bg-background border border-slate-100/50 rounded-3xl hover:bg-white hover:shadow-2xl hover:shadow-[#1b18ff]/5 transition-all duration-500">
-                                <div className="w-14 h-14 bg-[#1b18ff]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1b18ff] transition-colors duration-500">
-                                    <s.icon className="w-7 h-7 text-[#1b18ff] group-hover:text-white transition-colors duration-500" />
+                            <div key={i} className="group p-10 bg-background border border-slate-100/50 rounded-3xl hover:bg-white hover:shadow-2xl hover:shadow-[#3b82f6]/5 transition-all duration-500">
+                                <div className="w-14 h-14 bg-[#3b82f6]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#3b82f6] transition-colors duration-500">
+                                    <s.icon className="w-7 h-7 text-[#3b82f6] group-hover:text-white transition-colors duration-500" />
                                 </div>
-                                <h4 className="text-xl font-bold text-[#050918] group-hover:text-[#1b18ff] transition-colors mb-3">{s.title}</h4>
+                                <h4 className="text-xl font-bold text-[#050918] group-hover:text-[#3b82f6] transition-colors mb-3">{s.title}</h4>
                                 <p className="text-slate-500 font-medium leading-relaxed text-sm">{s.description}</p>
                             </div>
                         ))}
@@ -67,7 +67,7 @@ export default function SEOPage() {
                         {/* Content */}
                         <div className="space-y-8">
                             <div>
-                                <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1b18ff] mb-3">Proven Results</p>
+                                <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#3b82f6] mb-3">Proven Results</p>
                                 <h2 className="text-3xl md:text-5xl font-black text-[#050918] mb-6">Measurable Ranking Improvements.</h2>
                                 <p className="text-lg text-slate-500 font-medium leading-relaxed mb-8">
                                     Within the first 6 months, our average client sees a 150% increase in organic keywords ranking on page one of Google.
@@ -76,7 +76,7 @@ export default function SEOPage() {
                             <ul className="space-y-5">
                                 {results.map((item, i) => (
                                     <li key={i} className="flex items-center gap-4 text-[#050918] font-bold text-lg">
-                                        <TrendingUp className="w-6 h-6 text-[#1b18ff] shrink-0" />
+                                        <TrendingUp className="w-6 h-6 text-[#3b82f6] shrink-0" />
                                         {item}
                                     </li>
                                 ))}
@@ -97,7 +97,7 @@ export default function SEOPage() {
                 <div className="container mx-auto px-6">
                     <div className="max-w-3xl mx-auto">
                         <div className="bg-background rounded-3xl p-10 border border-slate-100">
-                            <p className="text-xs font-bold uppercase tracking-widest text-[#1b18ff] mb-6">12-Month Growth</p>
+                            <p className="text-xs font-bold uppercase tracking-widest text-[#3b82f6] mb-6">12-Month Growth</p>
                             <div className="flex items-end gap-2 h-48">
                                 {[20, 35, 30, 55, 50, 85, 80, 95, 88, 100, 98, 110].map((h, i) => (
                                     <motion.div
@@ -106,7 +106,7 @@ export default function SEOPage() {
                                         whileInView={{ height: `${h}%` }}
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.8, delay: i * 0.06 }}
-                                        className="flex-1 bg-[#1b18ff]/20 hover:bg-[#1b18ff] transition-colors rounded-t-lg"
+                                        className="flex-1 bg-[#3b82f6]/20 hover:bg-[#3b82f6] transition-colors rounded-t-lg"
                                     />
                                 ))}
                             </div>

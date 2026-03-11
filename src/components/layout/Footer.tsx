@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export function Footer() {
     return (
-        <footer className="bg-background pt-24 pb-12 text-[#050918] border-t border-[#1b18ff]/10 relative overflow-hidden">
+        <footer className="bg-background pt-24 pb-12 text-[#050918] border-t border-[#3b82f6]/10 relative overflow-hidden">
             {/* Background Glow */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#1b18ff]/5 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#3b82f6]/5 rounded-full blur-[120px] pointer-events-none" />
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-16 mb-20">
@@ -28,7 +28,7 @@ export function Footer() {
                         </p>
                         <div className="flex gap-5">
                             {[Linkedin, Twitter, Facebook].map((Icon, i) => (
-                                <Link key={i} href="#" className="text-slate-600 hover:text-[#1b18ff] transition-colors">
+                                <Link key={i} href="#" className="text-slate-600 hover:text-[#3b82f6] transition-colors">
                                     <Icon className="w-5 h-5" />
                                 </Link>
                             ))}
@@ -47,7 +47,7 @@ export function Footer() {
                                 { name: "SEO & SEM", href: "/services/seo-sem" }
                             ].map((link) => (
                                 <li key={link.name}>
-                                    <Link href={link.href} className="text-sm font-bold text-slate-500 hover:text-[#1b18ff] transition-colors">
+                                    <Link href={link.href} className="text-sm font-bold text-slate-500 hover:text-[#3b82f6] transition-colors">
                                         {link.name}
                                     </Link>
                                 </li>
@@ -67,7 +67,7 @@ export function Footer() {
                                 { name: "Contact Us", href: "/contact" }
                             ].map((link) => (
                                 <li key={link.name}>
-                                    <Link href={link.href} className="text-sm font-bold text-slate-500 hover:text-[#1b18ff] transition-colors">
+                                    <Link href={link.href} className="text-sm font-bold text-slate-500 hover:text-[#3b82f6] transition-colors">
                                         {link.name}
                                     </Link>
                                 </li>
@@ -80,20 +80,20 @@ export function Footer() {
                         <h3 className="text-xs font-black uppercase tracking-[0.4em] text-[#050918]">Get in Touch</h3>
                         <ul className="space-y-5">
                             <li className="flex items-start gap-4">
-                                <Mail className="w-5 h-5 text-[#1b18ff] shrink-0" />
+                                <Mail className="w-5 h-5 text-[#3b82f6] shrink-0" />
                                 <span className="text-sm font-medium text-slate-500">hello@techactive.digital</span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <Phone className="w-5 h-5 text-[#1b18ff] shrink-0" />
+                                <Phone className="w-5 h-5 text-[#3b82f6] shrink-0" />
                                 <span className="text-sm font-medium text-slate-500">+1 (555) Tech-Active</span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <MapPin className="w-5 h-5 text-[#1b18ff] shrink-0" />
+                                <MapPin className="w-5 h-5 text-[#3b82f6] shrink-0" />
                                 <span className="text-sm font-medium text-slate-500">123 Tech Center, Silicon Valley, CA</span>
                             </li>
                         </ul>
                         <div className="pt-4">
-                            <Link href="/contact" className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-[#1b18ff] hover:translate-x-1 transition-all group">
+                            <Link href="/contact" className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-[#3b82f6] hover:translate-x-1 transition-all group">
                                 Start a project <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </Link>
                         </div>
@@ -106,7 +106,7 @@ export function Footer() {
                     </p>
                     <div className="flex gap-10">
                         {["Privacy Policy", "Terms of Service"].map((text) => (
-                            <Link key={text} href="#" className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-700 hover:text-[#1b18ff] transition-colors">
+                            <Link key={text} href="#" className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-700 hover:text-[#3b82f6] transition-colors">
                                 {text}
                             </Link>
                         ))}

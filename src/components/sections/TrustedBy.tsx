@@ -6,7 +6,7 @@ export function TrustedBy() {
     ];
 
     return (
-        <section className="py-14 bg-background border-b border-[#1b18ff]/10">
+        <section className="py-14 bg-background border-b border-[#3b82f6]/10">
             <div className="container mx-auto px-6">
                 <p className="text-center text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-8">
                     Integrated with the world's leading platforms

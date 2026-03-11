@@ -40,8 +40,8 @@ export function WhyChooseUs() {
         <section className="py-32 bg-background relative overflow-hidden">
             {/* Dynamic Background */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute top-0 left-1/4 w-[800px] h-[800px] bg-[#1b18ff]/5 rounded-full blur-[160px] animate-pulse" />
-                <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-[#1b18ff]/5 rounded-full blur-[140px]" />
+                <div className="absolute top-0 left-1/4 w-[800px] h-[800px] bg-[#3b82f6]/5 rounded-full blur-[160px] animate-pulse" />
+                <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-[#3b82f6]/5 rounded-full blur-[140px]" />
                 <div className="absolute inset-0 opacity-[0.05] grayscale" style={{ backgroundImage: 'url("/img-hero-cybersec.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} />
             </div>
 
@@ -53,10 +53,10 @@ export function WhyChooseUs() {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="inline-flex items-center gap-4 px-4 py-2 rounded-full bg-[#1b18ff]/5 border border-[#1b18ff]/10"
+                            className="inline-flex items-center gap-4 px-4 py-2 rounded-full bg-[#3b82f6]/5 border border-[#3b82f6]/10"
                         >
-                            <span className="w-2 h-2 rounded-full bg-[#1b18ff] animate-ping" />
-                            <span className="text-[10px] font-black tracking-[0.4em] text-[#1b18ff] uppercase">Why TechActive</span>
+                            <span className="w-2 h-2 rounded-full bg-[#3b82f6] animate-ping" />
+                            <span className="text-[10px] font-black tracking-[0.4em] text-[#3b82f6] uppercase">Why TechActive</span>
                         </motion.div>
 
                         <motion.h2
@@ -65,7 +65,7 @@ export function WhyChooseUs() {
                             viewport={{ once: true }}
                             className="text-4xl md:text-6xl font-black text-[#050918] leading-none tracking-tighter"
                         >
-                            WE ENGINEER <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1b18ff] to-[#6B7FFF]">ADVANTAGE.</span>
+                            WE ENGINEER <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3b82f6] to-[#6B7FFF]">ADVANTAGE.</span>
                         </motion.h2>
 
                         <motion.p
@@ -87,13 +87,13 @@ export function WhyChooseUs() {
                                     transition={{ delay: i * 0.1 }}
                                     className="flex items-center gap-3 text-[#050918] font-black tracking-widest uppercase text-xs"
                                 >
-                                    <CheckCircle2 className="w-5 h-5 text-[#1b18ff]" />
+                                    <CheckCircle2 className="w-5 h-5 text-[#3b82f6]" />
                                     {item}
                                 </motion.div>
                             ))}
                         </div>
 
-                        <Link href="/about" className="inline-flex items-center gap-4 bg-[#1b18ff]/5 hover:bg-[#1b18ff]/10 text-[#050918] px-8 py-4 rounded-2xl font-black transition-all group">
+                        <Link href="/about" className="inline-flex items-center gap-4 bg-[#3b82f6]/5 hover:bg-[#3b82f6]/10 text-[#050918] px-8 py-4 rounded-2xl font-black transition-all group">
                             Learn more about our mission <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                         </Link>
                     </div>
@@ -109,7 +109,7 @@ export function WhyChooseUs() {
                                     viewport={{ once: true }}
                                     transition={{ delay: i * 0.1 }}
                                     whileHover={{ y: -10 }}
-                                    className={`p-10 rounded-[3rem] glass-card transition-all duration-500 hover:border-[#1b18ff]/50 ${i % 2 !== 0 ? 'mt-12 md:mt-24' : ''}`}
+                                    className={`p-10 rounded-[3rem] glass-card transition-all duration-500 hover:border-[#3b82f6]/50 ${i % 2 !== 0 ? 'mt-12 md:mt-24' : ''}`}
                                 >
                                     <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-8 ${f.bg}`}>
                                         <f.icon className={`w-7 h-7 ${f.accent}`} />
