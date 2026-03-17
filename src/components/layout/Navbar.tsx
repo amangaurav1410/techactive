@@ -63,7 +63,7 @@ export function Navbar() {
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden md:flex items-center gap-1">
+                    <nav className="hidden lg:flex items-center gap-1">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
@@ -81,7 +81,7 @@ export function Navbar() {
                     </nav>
 
                     {/* CTA */}
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <Link href="/contact">
                             <GradientButton className="h-10 px-6 text-[11px] font-black uppercase tracking-widest rounded-xl">
                                 Contact Us
@@ -91,7 +91,7 @@ export function Navbar() {
 
                     {/* Mobile toggle */}
                     <button
-                        className="md:hidden text-[#050918] p-2 rounded-lg hover:bg-[#3b82f6]/5 transition-colors"
+                        className="lg:hidden text-[#050918] p-2 rounded-lg hover:bg-[#3b82f6]/5 transition-colors"
                         onClick={() => setMobileOpen(!mobileOpen)}
                         aria-label="Toggle menu"
                     >

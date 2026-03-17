@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Github, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Facebook, Twitter, Linkedin, Github, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
@@ -84,12 +84,8 @@ export function Footer() {
                                 <span className="text-sm font-medium text-slate-500">info@techactive.com</span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <Phone className="w-5 h-5 text-[#3b82f6] shrink-0" />
-                                <span className="text-sm font-medium text-slate-500">+1 (555) Tech-Active</span>
-                            </li>
-                            <li className="flex items-start gap-4">
                                 <MapPin className="w-5 h-5 text-[#3b82f6] shrink-0" />
-                                <span className="text-sm font-medium text-slate-500">123 Tech Center, Silicon Valley, CA</span>
+                                <span className="text-sm font-medium text-slate-500">Sydney, Australia</span>
                             </li>
                         </ul>
                         <div className="pt-4">

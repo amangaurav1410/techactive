@@ -4,35 +4,9 @@ import { motion } from "framer-motion";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Link from "next/link";
 
-const blogPosts = [
-    {
-        title: "10 Critical Steps to Secure Your Enterprise Infrastructure in 2026",
-        excerpt: "As cyberattacks grow more sophisticated, enterprise security posture must evolve beyond perimeter defence. We outline the 10 most impactful steps leaders can take right now.",
-        category: "Cybersecurity",
-        date: "March 5, 2026",
-        readTime: "8 min read",
-        slug: "secure-your-enterprise-infrastructure",
-        image: "/img-cybersec-blog.png"
-    },
-    {
-        title: "How AI-Powered Personalization is Reshaping Enterprise Marketing in 2026",
-        excerpt: "From predictive content delivery to intent-driven ad targeting, AI is transforming how enterprise marketers engage audiences and drive measurable conversion growth.",
-        category: "Marketing",
-        date: "Feb 28, 2026",
-        readTime: "6 min read",
-        slug: "ai-revolutionizing-digital-marketing",
-        image: "/img-ai-blog.png"
-    },
-    {
-        title: "Cloud Architecture Patterns for High-Scale Distributed Systems",
-        excerpt: "A practical guide to designing cloud-native architectures that deliver 99.99% uptime, horizontal scalability, and global latency under 50ms — using AWS and Kubernetes.",
-        category: "IT Solutions",
-        date: "Feb 20, 2026",
-        readTime: "12 min read",
-        slug: "scaling-your-cloud-guide",
-        image: "/img-cloud.png"
-    }
-];
+import { blogPosts } from "@/lib/data/blog";
+
+const homePosts = blogPosts.slice(0, 3);
 
 export function HomeBlog() {
     return (
@@ -57,7 +31,7 @@ export function HomeBlog() {
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {blogPosts.map((post, i) => (
+                    {homePosts.map((post, i) => (
                         <motion.article
                             key={i}
                             initial={{ opacity: 0, y: 20 }}

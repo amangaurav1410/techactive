@@ -25,6 +25,7 @@ const outfit = Outfit({
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://techactive.com"),
   title: "TechActive | Secure Your Business. Scale Your Growth.",
   description: "TechActive delivers premium cybersecurity, digital marketing, and IT solutions designed for modern businesses. Scale your growth with enterprise-grade technology.",
   keywords: ["cybersecurity", "digital marketing", "IT services", "web development", "SEO", "SEM", "tech solutions"],

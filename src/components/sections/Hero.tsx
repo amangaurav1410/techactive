@@ -60,7 +60,7 @@ export function Hero() {
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                            className="text-5xl md:text-8xl font-black text-[#050918] leading-[0.8] tracking-tighter"
+                            className="text-4xl sm:text-6xl md:text-8xl font-black text-[#050918] leading-[0.8] tracking-tighter"
                         >
                             ENGINEER <br />
                             <AnimatePresence mode="wait">
@@ -169,7 +169,7 @@ export function Hero() {
 
                         {/* The Shield Image */}
                         <img
-                            src="/cybersecurity_shield_element_png_1772997592541.png"
+                            src="/cybersecurity-shield.png"
                             alt="Security Status"
                             className="w-full h-full object-cover scale-[1.1] opacity-95 group-hover:scale-130 transition-transform duration-1000"
                         />

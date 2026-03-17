@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, MessageSquare, Linkedin, Twitter, Github, Facebook } from "lucide-react";
+import { Mail, MapPin, Send, MessageSquare, Linkedin, Twitter, Github, Facebook } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -14,7 +14,6 @@ import Link from "next/link";
 const contactSchema = z.object({
     name: z.string().min(2, "Name is too short"),
     email: z.string().email("Invalid email address"),
-    phone: z.string().min(10, "Invalid phone number"),
     company: z.string().min(2, "Company name is required"),
     message: z.string().min(10, "Message must be at least 10 characters")
 });
@@ -34,8 +33,7 @@ export default function ContactPage() {
 
     const contactInfo = [
         { label: "Email Us", value: "info@techactive.com", icon: Mail, href: "mailto:info@techactive.com" },
-        { label: "Call Us", value: "+1 (555) 123-4567", icon: Phone, href: "tel:+15551234567" },
-        { label: "Visit Us", value: "123 Tech Avenue, Silicon Valley, CA 94025", icon: MapPin, href: "#" }
+        { label: "Visit Us", value: "Sydney, Australia", icon: MapPin, href: "#" }
     ];
 
     return (
@@ -73,17 +71,10 @@ export default function ContactPage() {
                                             {errors.email && <p className="text-xs text-red-500 font-bold">{errors.email.message}</p>}
                                         </div>
                                     </div>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div className="space-y-2">
-                                            <label className="text-xs font-bold uppercase tracking-widest text-slate-400">Phone Number</label>
-                                            <Input placeholder="+1 (555) 000-0000" className="h-12 rounded-xl border-slate-200 bg-slate-50 focus:bg-white" {...register("phone")} />
-                                            {errors.phone && <p className="text-xs text-red-500 font-bold">{errors.phone.message}</p>}
-                                        </div>
-                                        <div className="space-y-2">
-                                            <label className="text-xs font-bold uppercase tracking-widest text-slate-400">Company Name</label>
-                                            <Input placeholder="Acme Corp" className="h-12 rounded-xl border-slate-200 bg-slate-50 focus:bg-white" {...register("company")} />
-                                            {errors.company && <p className="text-xs text-red-500 font-bold">{errors.company.message}</p>}
-                                        </div>
+                                    <div className="space-y-2">
+                                        <label className="text-xs font-bold uppercase tracking-widest text-slate-400">Company Name</label>
+                                        <Input placeholder="Acme Corp" className="h-12 rounded-xl border-slate-200 bg-slate-50 focus:bg-white" {...register("company")} />
+                                        {errors.company && <p className="text-xs text-red-500 font-bold">{errors.company.message}</p>}
                                     </div>
                                     <div className="space-y-2">
                                         <label className="text-xs font-bold uppercase tracking-widest text-slate-400">Your Message</label>
@@ -142,7 +133,7 @@ export default function ContactPage() {
                                     <div className="h-36 bg-[#3b82f6]/10 flex items-center justify-center">
                                         <div className="text-center space-y-3">
                                             <MapPin className="w-8 h-8 text-[#3b82f6] mx-auto animate-bounce" />
-                                            <p className="text-[10px] uppercase font-black tracking-widest text-[#050918]/40">Silicon Valley, CA</p>
+                                            <p className="text-[10px] uppercase font-black tracking-widest text-[#050918]/40">Sydney, Australia</p>
                                         </div>
                                     </div>
                                 </div>
