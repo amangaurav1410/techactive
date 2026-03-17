@@ -33,7 +33,7 @@ export default function ContactPage() {
     };
 
     const contactInfo = [
-        { label: "Email Us", value: "hello@techactive.com", icon: Mail, href: "mailto:hello@techactive.com" },
+        { label: "Email Us", value: "info@techactive.com", icon: Mail, href: "mailto:info@techactive.com" },
         { label: "Call Us", value: "+1 (555) 123-4567", icon: Phone, href: "tel:+15551234567" },
         { label: "Visit Us", value: "123 Tech Avenue, Silicon Valley, CA 94025", icon: MapPin, href: "#" }
     ];

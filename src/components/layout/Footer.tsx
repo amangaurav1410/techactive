@@ -81,7 +81,7 @@ export function Footer() {
                         <ul className="space-y-5">
                             <li className="flex items-start gap-4">
                                 <Mail className="w-5 h-5 text-[#3b82f6] shrink-0" />
-                                <span className="text-sm font-medium text-slate-500">hello@techactive.digital</span>
+                                <span className="text-sm font-medium text-slate-500">info@techactive.com</span>
                             </li>
                             <li className="flex items-start gap-4">
                                 <Phone className="w-5 h-5 text-[#3b82f6] shrink-0" />

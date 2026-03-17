@@ -28,6 +28,7 @@ export function Navbar() {
         { name: "About Us", href: "/about" },
         { name: "Services", href: "/services" },
         { name: "Blog", href: "/blog" },
+        { name: "Careers", href: "/careers" },
     ];
 
     const isActive = (href: string) => {
