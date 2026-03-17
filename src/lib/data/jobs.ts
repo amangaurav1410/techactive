@@ -14,7 +14,7 @@ export const jobs: Job[] = [
         id: "cybersecurity-analyst",
         title: "Cybersecurity Analyst",
         category: "Cybersecurity",
-        location: "Remote / Hybrid",
+        location: "Australia",
         type: "Full-time",
         description: "We are looking for a highly skilled Cybersecurity Analyst to join our team. You will be responsible for protecting our clients' technical infrastructure and scale their growth securely.",
         requirements: [
@@ -34,7 +34,7 @@ export const jobs: Job[] = [
         id: "penetration-tester",
         title: "Senior Penetration Tester",
         category: "Cybersecurity",
-        location: "On-site (Bangalore)",
+        location: "Australia",
         type: "Full-time",
         description: "Join us as a Senior Penetration Tester to help identify vulnerabilities in our systems and infrastructure before malicious actors do.",
         requirements: [
@@ -54,7 +54,7 @@ export const jobs: Job[] = [
         id: "security-architect",
         title: "Security Architect",
         category: "Cybersecurity",
-        location: "Remote",
+        location: "Australia",
         type: "Full-time",
         description: "As a Security Architect, you will design, build, and oversee the implementation of network and computer security for our clients.",
         requirements: [
@@ -74,7 +74,7 @@ export const jobs: Job[] = [
         id: "incident-response-manager",
         title: "Incident Response Manager",
         category: "Cybersecurity",
-        location: "Hybrid (Delhi)",
+        location: "Australia",
         type: "Full-time",
         description: "Lead our incident response efforts and help our clients minimize the impact of security incidents.",
         requirements: [
