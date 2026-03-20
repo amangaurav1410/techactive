@@ -44,6 +44,10 @@ export default function JobDetailPage({ params }: { params: Promise<{ id: string
                         <Briefcase className="w-4 h-4 text-[#3b82f6]" />
                         {job.type}
                     </div>
+                    <div className="flex items-center gap-2 px-4 py-2 bg-[#3b82f6]/5 border border-[#3b82f6]/10 rounded-xl text-sm font-bold border-dashed">
+                        <Calendar className="w-4 h-4 text-[#3b82f6]" />
+                        {job.experience} Experience
+                    </div>
                 </div>
             </PageHero>
 

@@ -9,7 +9,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { slug } = await params;
-    const post = blogPosts.find(p => p.slug === slug);
+    const post = blogPosts.find(p => p.slug.toLowerCase() === slug.toLowerCase());
 
     if (!post) return { title: "Post Not Found | TechActive" };
 
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function BlogDetailPage({ params }: PageProps) {
     const { slug } = await params;
-    const post = blogPosts.find(p => p.slug === slug);
+    const post = blogPosts.find(p => p.slug.toLowerCase() === slug.toLowerCase());
 
     if (!post) {
         notFound();

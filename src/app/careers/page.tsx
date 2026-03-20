@@ -75,7 +75,11 @@ export default function CareersPage() {
                                                             <span className="flex items-center gap-1.5 text-slate-400 text-[10px] font-black uppercase tracking-widest">
                                                                 <MapPin className="w-3 h-3" />
                                                                 {job.location}
-                                                            </span>
+                                                             </span>
+                                                             <span className="flex items-center gap-1.5 text-slate-400 text-[10px] font-black uppercase tracking-widest border-l border-slate-200 pl-3">
+                                                                <Briefcase className="w-3 h-3" />
+                                                                {job.experience} Exp
+                                                             </span>
                                                         </div>
                                                         <h3 className="text-2xl font-black tracking-tight group-hover:text-[#3b82f6] transition-colors">{job.title}</h3>
                                                         <p className="mt-3 text-slate-500 font-medium max-w-xl line-clamp-2">

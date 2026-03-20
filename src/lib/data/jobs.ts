@@ -4,6 +4,7 @@ export interface Job {
     category: string;
     location: string;
     type: string;
+    experience: string;
     description: string;
     requirements: string[];
     responsibilities: string[];
@@ -11,83 +12,65 @@ export interface Job {
 
 export const jobs: Job[] = [
     {
-        id: "cybersecurity-analyst",
-        title: "Cybersecurity Analyst",
+        id: "cyber-security-analyst",
+        title: "Cyber Security Analyst",
         category: "Cybersecurity",
-        location: "Australia",
+        location: "Sydney, Australia (On-site)",
         type: "Full-time",
-        description: "We are looking for a highly skilled Cybersecurity Analyst to join our team. You will be responsible for protecting our clients' technical infrastructure and scale their growth securely.",
-        requirements: [
-            "3+ years of experience in cybersecurity operations.",
-            "Strong understanding of network protocols and security tools.",
-            "Experience with incident response and threat intelligence.",
-            "Relevant certifications such as CompTIA Security+, CEH, or CISSP."
-        ],
+        experience: "1–3 Years",
+        description: "We are seeking a Cyber Security Analyst to support security monitoring, vulnerability management, and incident response activities. The role involves analysing security alerts, identifying vulnerabilities, and working with IT teams to strengthen the organisation’s cybersecurity posture.",
         responsibilities: [
-            "Monitor networks for security breaches and investigate violations.",
-            "Install and use software, such as firewalls and data encryption programs.",
-            "Conduct penetration testing and vulnerability assessments.",
-            "Develop security standards and best practices for the organization."
+            "Monitor organisational systems, endpoints, and network environments to detect potential security threats.",
+            "Analyse SIEM alerts and security logs to support incident detection, triage, and escalation.",
+            "Conduct vulnerability assessments and security scanning using tools such as Nessus, OpenVAS, and Nmap.",
+            "Perform network analysis and attack surface identification to detect exposed services and misconfigurations.",
+            "Support incident investigation and response activities to mitigate security risks.",
+            "Collaborate with IT and infrastructure teams to remediate vulnerabilities and implement security best practices.",
+            "Maintain security documentation and assist with compliance and audit preparation.",
+            "Promote cybersecurity awareness and best practices across the organisation."
+        ],
+        requirements: [
+            "Security monitoring and SOC operations",
+            "SIEM tools such as Splunk or Microsoft Sentinel",
+            "Vulnerability management tools (Nessus, OpenVAS)",
+            "Network analysis tools such as Nmap and Wireshark",
+            "Understanding of security frameworks (NIST, CIS Controls, ISO 27001)",
+            "Knowledge of incident response and threat detection"
         ]
     },
     {
-        id: "penetration-tester",
-        title: "Senior Penetration Tester",
-        category: "Cybersecurity",
-        location: "Australia",
+        id: "senior-tester-automation",
+        title: "Senior Tester (Automation)",
+        category: "Quality Assurance",
+        location: "Sydney, Australia (On-site)",
         type: "Full-time",
-        description: "Join us as a Senior Penetration Tester to help identify vulnerabilities in our systems and infrastructure before malicious actors do.",
-        requirements: [
-            "5+ years of experience in offensive security.",
-            "Proven track record of finding critical vulnerabilities.",
-            "Expertise in web application, network, and cloud penetration testing.",
-            "Strong report writing and communication skills."
-        ],
+        experience: "8+ Years",
+        description: "The Senior Tester (Automation) is responsible for designing and executing test strategies, developing automated test frameworks, and ensuring highquality delivery across web, mobile, and API layers. This role requires strong handson experience in automation along with the ability to lead testing efforts, mentor junior team members, and collaborate closely with development and product teams.",
         responsibilities: [
-            "Perform manual and automated penetration tests.",
-            "Simulate cyberattacks to identify vulnerabilities.",
-            "Work with development teams to remediate identified security flaws.",
-            "Stay up-to-date with the latest security threats and techniques."
-        ]
-    },
-    {
-        id: "security-architect",
-        title: "Security Architect",
-        category: "Cybersecurity",
-        location: "Australia",
-        type: "Full-time",
-        description: "As a Security Architect, you will design, build, and oversee the implementation of network and computer security for our clients.",
-        requirements: [
-            "7+ years of experience in security architecture.",
-            "Expert knowledge of secure network design and encryption.",
-            "Experience with cloud security (AWS, GCP, Azure).",
-            "Bachelor's or Master's degree in Computer Science or related field."
+            "Design, develop, and maintain automation frameworks for web, API, and mobile applications (Selenium, Playwright, Cypress, Appium, etc.).",
+            "Create and execute automated and manual test cases based on business and technical requirements.",
+            "Perform functional, regression, integration, performance, and endtoend testing.",
+            "Build and maintain automated test suites integrated into CI/CD pipelines (Azure DevOps, Jenkins, GitHub Actions, GitLab CI).",
+            "Collaborate with developers and business analysts to identify defects and drive resolutions.",
+            "Lead test planning, test strategy creation, estimation, and risk assessment activities.",
+            "Ensure traceability between requirements, test scenarios, and test results.",
+            "Troubleshoot automation failures and maintain test stability and reliability.",
+            "Work with tools like Postman, RestAssured, SoapUI for API testing.",
+            "Participate in Agile ceremonies and contribute to continuous improvement initiatives.",
+            "Mentor junior testers and provide guidance on testing best practices.",
+            "Prepare test reports, dashboards, and documentation for stakeholders."
         ],
-        responsibilities: [
-            "Design secure network architectures and systems.",
-            "Evaluate new security technologies and tools.",
-            "Ensure compliance with industry standards and regulations.",
-            "Lead security reviews and architecture assessments."
-        ]
-    },
-    {
-        id: "incident-response-manager",
-        title: "Incident Response Manager",
-        category: "Cybersecurity",
-        location: "Australia",
-        type: "Full-time",
-        description: "Lead our incident response efforts and help our clients minimize the impact of security incidents.",
         requirements: [
-            "5+ years of experience in incident response and digital forensics.",
-            "Strong leadership and project management skills.",
-            "Experience working with legal and compliance teams.",
-            "Deep understanding of the threat landscape."
-        ],
-        responsibilities: [
-            "Coordinate the response to security incidents.",
-            "Develop and maintain incident response plans.",
-            "Perform digital forensics and post-incident analysis.",
-            "Communicate incident status to stakeholders and management."
+            "Bachelor’s degree in IT, Computer Science, Engineering, or related field.",
+            "8+ years of experience in software testing, with strong automation exposure.",
+            "Hands-on experience with automation tools and frameworks: Selenium WebDriver, Playwright, Cypress, Appium",
+            "API automation (RestAssured, Postman scripts, Karate, etc.)",
+            "Strong programming/scripting experience in C#, Python, or JavaScript",
+            "Solid understanding of testing methodologies (Agile, Scrum, BDD/TDD).",
+            "Experience working with CI/CD processes and version control (Git).",
+            "Strong understanding of SDLC, STLC, and defect management.",
+            "Experience with test management tools (Jira, Azure DevOps, Zephyr, TestRail).",
+            "Good understanding of databases and ability to write SQL queries."
         ]
     }
 ];
