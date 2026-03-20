@@ -26,13 +26,16 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://techactive.com"),
-  title: "TechActive | Secure Your Business. Scale Your Growth.",
-  description: "TechActive delivers premium cybersecurity, digital marketing, and IT solutions designed for modern businesses. Scale your growth with enterprise-grade technology.",
+  title: {
+    default: "TechActive | Cybersecurity, IT Solutions & Digital Marketing",
+    template: "%s | TechActive"
+  },
+  description: "TechActive delivers premium cybersecurity, digital marketing, and enterprise IT solutions designed for modern businesses. Protect your infrastructure and scale your growth with practitioners.",
   keywords: ["cybersecurity", "digital marketing", "IT services", "web development", "SEO", "SEM", "tech solutions"],
   authors: [{ name: "TechActive Team" }],
   openGraph: {
-    title: "TechActive | Secure Your Business. Scale Your Growth.",
-    description: "Enterprise-level tech solutions for modern businesses.",
+    title: "TechActive | Cybersecurity, IT Solutions & Digital Marketing",
+    description: "Enterprise-level tech solutions for modern businesses. Secure your systems and scale your growth.",
     url: "https://techactive.com",
     siteName: "TechActive",
     images: [
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TechActive | Secure Your Business",
+    title: "TechActive | Cybersecurity & Growth",
     description: "Premium IT solutions and cybersecurity services.",
     images: ["/og-image.png"],
   },
