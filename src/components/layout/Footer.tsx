@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, MapPin, Facebook, Twitter, Linkedin, Github, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Linkedin, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
@@ -26,12 +26,31 @@ export function Footer() {
                         <p className="text-slate-500 text-sm font-medium leading-relaxed">
                             Engineering high-velocity digital solutions for the next generation of industry leaders.
                         </p>
-                        <div className="flex gap-5">
-                            {[Linkedin, Twitter, Facebook].map((Icon, i) => (
-                                <Link key={i} href="#" className="text-slate-600 hover:text-[#3b82f6] transition-colors">
-                                    <Icon className="w-5 h-5" />
-                                </Link>
-                            ))}
+                        <div className="flex gap-5 items-center">
+                            {/* LinkedIn */}
+                            <Link
+                                href="https://www.linkedin.com/company/techactive-pty-ltd/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="TechActive on LinkedIn"
+                                className="text-slate-600 hover:text-[#3b82f6] transition-colors"
+                            >
+                                <Linkedin className="w-5 h-5" />
+                            </Link>
+                            {/* Instagram */}
+                            <Link
+                                href="https://www.instagram.com/techactive__?igsh=MWg1bGVneDMwOWliNg=="
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="TechActive on Instagram"
+                                className="text-slate-600 hover:text-[#3b82f6] transition-colors"
+                            >
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                                </svg>
+                            </Link>
                         </div>
                     </div>
 
@@ -101,9 +120,12 @@ export function Footer() {
                         © {new Date().getFullYear()} TechActive Digital.
                     </p>
                     <div className="flex gap-10">
-                        {["Privacy Policy", "Terms of Service"].map((text) => (
-                            <Link key={text} href="#" className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-700 hover:text-[#3b82f6] transition-colors">
-                                {text}
+                        {[
+                            { text: "Privacy Policy", href: "/privacy" },
+                            { text: "Terms of Service", href: "/terms" }
+                        ].map((link) => (
+                            <Link key={link.text} href={link.href} className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-700 hover:text-[#3b82f6] transition-colors">
+                                {link.text}
                             </Link>
                         ))}
                     </div>

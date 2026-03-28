@@ -5,36 +5,44 @@ import { Star, CheckCircle2 } from "lucide-react";
 
 const testimonials = [
     {
-        text: "TechActive completely transformed our enterprise security posture. Within 90 days, they identified 47 critical vulnerabilities and deployed a zero-trust framework that reduced our attack surface by over 80%.",
-        author: "Sarah Johnson",
-        role: "Chief Technology Officer",
-        company: "Global Logistics Inc.",
+        text: "Honestly, I was skeptical at first — we'd tried two agencies before and got burned. TechActive was different. They actually took time to understand our business before touching anything. Our site went from page 4 to page 1 for our main keywords within four months. Still can't believe it.",
+        author: "Ryan Patel",
+        role: "Co-founder",
+        company: "Nexora Retail",
         image: "/img-avatar-1.png",
-        metric: "80% ↓ Attack Surface"
+        metric: "+220% Organic Leads"
     },
     {
-        text: "Our organic search traffic increased by 312% within six months of engaging TechActive's SEO team. They understood our market deeply and built a content strategy that dominates our competitive keywords.",
-        author: "James Miller",
-        role: "VP of Marketing",
-        company: "TechStart Solutions",
+        text: "We had a pretty bad security incident last year and didn't know where to start. The TechActive team came in, did a full audit, and walked us through every finding without making us feel dumb. They patched things methodically and gave us a playbook we actually use. Solid team.",
+        author: "Claire Hutchinson",
+        role: "Operations Manager",
+        company: "Bridgepoint Finance",
         image: "/img-avatar-2.png",
-        metric: "+312% Organic Traffic"
+        metric: "Zero incidents post-audit"
     },
     {
-        text: "They delivered our entire B2B e-commerce platform — including custom ERP integrations — two weeks ahead of schedule. The platform processes over $4M in transactions monthly without a single downtime.",
-        author: "Emma Davis",
-        role: "Chief Executive Officer",
-        company: "FashionHub Global",
+        text: "We needed a new website fast — like, two months fast. They delivered in six weeks and it looked better than anything I'd seen from agencies charging twice as much. The team was responsive, no ghosting, no vague updates. Just got it done.",
+        author: "Ben Okafor",
+        role: "Head of Growth",
+        company: "Luminary Labs",
         image: "/img-avatar-3.png",
-        metric: "$4M+ Monthly GMV"
+        metric: "6-week delivery"
     },
     {
-        text: "Migrating 40TB of sensitive financial data to AWS with zero downtime was something we thought was impossible. TechActive's cloud architects made it seamless. Our infrastructure costs dropped by 35%.",
-        author: "Michael Ross",
-        role: "Director of Infrastructure",
-        company: "DataStream Financial",
+        text: "Our Google Ads were bleeding money — $8k a month with almost nothing to show for it. TechActive restructured the entire account in a few weeks. By month two we were paying less and converting more. That's the only metric that matters.",
+        author: "Priya Sharma",
+        role: "Marketing Director",
+        company: "CloudVault SaaS",
         image: "/img-avatar-1.png",
-        metric: "35% ↓ Infra Costs"
+        metric: "3.4× ROAS improvement"
+    },
+    {
+        text: "I've worked with a lot of dev teams. What sets TechActive apart is they actually communicate. No jargon, no excuses, and they flagged a potential issue before it became a problem. That kind of proactiveness is rare.",
+        author: "Marcus Webb",
+        role: "Product Manager",
+        company: "Stackline Commerce",
+        image: "/img-avatar-2.png",
+        metric: "On-time, on-budget delivery"
     }
 ];
 

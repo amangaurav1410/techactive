@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send, MessageSquare, Linkedin, Twitter, Github, Facebook } from "lucide-react";
+import { Mail, MapPin, Send, MessageSquare, Linkedin } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -120,11 +120,28 @@ export default function ContactPage() {
                                 <div className="mt-10 pt-10 border-t border-white/10">
                                     <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-6">Follow Us</p>
                                     <div className="flex items-center gap-4">
-                                        {[Facebook, Twitter, Linkedin, Github].map((Icon, i) => (
-                                            <Link key={i} href="#" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-[#3b82f6] hover:text-white transition-all duration-300">
-                                                <Icon className="w-4 h-4" />
-                                            </Link>
-                                        ))}
+                                        {/* LinkedIn */}
+                                        <Link
+                                            href="https://www.linkedin.com/company/techactive-pty-ltd/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-[#3b82f6] hover:text-white transition-all duration-300"
+                                        >
+                                            <Linkedin className="w-4 h-4" />
+                                        </Link>
+                                        {/* Instagram */}
+                                        <Link
+                                            href="https://www.instagram.com/techactive__?igsh=MWg1bGVneDMwOWliNg=="
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-[#3b82f6] hover:text-white transition-all duration-300"
+                                        >
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                                <circle cx="12" cy="12" r="4" />
+                                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                                            </svg>
+                                        </Link>
                                     </div>
                                 </div>
 

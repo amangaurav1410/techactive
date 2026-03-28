@@ -1,10 +1,14 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Premium Enterprise Technical Services",
-    description: "Expert cybersecurity, digital marketing, and IT solutions tailored for modern businesses. Scale your growth with TechActive's practitioners.",
+    title: "Our Services | Cybersecurity, IT & Digital Solutions",
+    description: "Explore TechActive's enterprise capabilities including cybersecurity, cloud infrastructure, digital marketing, and high-velocity web development.",
 };
 
-export default function ServicesLayout({ children }: { children: React.ReactNode }) {
+export default function ServicesLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
     return <>{children}</>;
 }
