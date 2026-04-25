@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, MapPin, Linkedin, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Linkedin, ArrowRight, Phone } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
@@ -94,10 +94,13 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    {/* Contact - Section 3 */}
                     <div className="space-y-8">
                         <h3 className="text-xs font-black uppercase tracking-[0.4em] text-[#050918]">Get in Touch</h3>
                         <ul className="space-y-5">
+                            <li className="flex items-start gap-4">
+                                <Phone className="w-5 h-5 text-[#3b82f6] shrink-0" />
+                                <a href="tel:1300185209" className="text-sm font-medium text-slate-500 hover:text-[#3b82f6] transition-colors">1300 185 209</a>
+                            </li>
                             <li className="flex items-start gap-4">
                                 <Mail className="w-5 h-5 text-[#3b82f6] shrink-0" />
                                 <span className="text-sm font-medium text-slate-500">info@techactive.com</span>

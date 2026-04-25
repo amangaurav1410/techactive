@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send, MessageSquare, Linkedin } from "lucide-react";
+import { Mail, MapPin, Send, MessageSquare, Linkedin, Phone } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -32,6 +32,7 @@ export default function ContactPage() {
     };
 
     const contactInfo = [
+        { label: "Call Us", value: "1300 185 209", icon: Phone, href: "tel:1300185209" },
         { label: "Email Us", value: "info@techactive.com", icon: Mail, href: "mailto:info@techactive.com" },
         { label: "Visit Us", value: "Sydney, Australia", icon: MapPin, href: "#" }
     ];
