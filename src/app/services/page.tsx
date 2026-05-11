@@ -21,15 +21,6 @@ export default function ServicesPage() {
                 title={<>The Infrastructure Of <br className="hidden md:block" /> <span className="text-[#3b82f6]">High-Growth</span> Business.</>}
                 subtitle="We don't just provide services. We engineer the technical foundations that allow global enterprises to scale without limits."
                 image="/img-hero-cybersec.png"
-            >
-                <div className="flex flex-wrap justify-center gap-6 mt-6">
-                    <button className="bg-[#3b82f6] text-white px-8 py-4 rounded-2xl font-black text-sm tracking-widest uppercase hover:scale-105 transition-all shadow-xl shadow-[#3b82f6]/30">
-                        View Technical Stack
-                    </button>
-                    <button className="bg-[#3b82f6]/5 border border-[#3b82f6]/10 text-[#050918] px-8 py-4 rounded-2xl font-black text-sm tracking-widest uppercase hover:bg-[#3b82f6]/10 transition-all">
-                        Download Portfolio
-                    </button>
-                </div>
             </PageHero>
 
             {/* Services Grid Section (The one we redesigned to be anti-box) */}

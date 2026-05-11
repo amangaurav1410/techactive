@@ -80,7 +80,7 @@ export default function ITServicesPage() {
                                 </p>
                             </div>
 
-                            <div className="bg-background text-white p-8 rounded-3xl space-y-4">
+                            <div className="bg-background text-[#050918] p-8 rounded-3xl space-y-4">
                                 <h3 className="text-2xl font-black mb-6">99.99% Uptime. Always Active.</h3>
                                 <ul className="space-y-4">
                                     {features.map((f, i) => (

@@ -114,7 +114,7 @@ export default function DigitalMarketingPage() {
             <section className="py-28 bg-background text-white overflow-hidden">
                 <div className="container mx-auto px-6 text-center">
                     <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#6B7FFF] mb-3">Our Method</p>
-                    <h2 className="text-3xl md:text-5xl font-black mb-20">The TechActive Approach.</h2>
+                    <h2 className="text-3xl md:text-5xl font-black text-[#050918] mb-20">The TechActive Approach.</h2>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-left">
                         {[
                             { title: "Define", desc: "Setting clear KPIs and goals aligned with your business." },

@@ -74,7 +74,7 @@ export default function WebDevelopmentPage() {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#6B7FFF] mb-3">Portfolio Preview</p>
-                        <h2 className="text-3xl md:text-5xl font-black">Showcase of Excellence.</h2>
+                        <h2 className="text-3xl md:text-5xl font-black text-[#050918]">Showcase of Excellence.</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {portfolio.map((p, i) => (
