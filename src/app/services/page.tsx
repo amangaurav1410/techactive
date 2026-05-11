@@ -21,6 +21,7 @@ export default function ServicesPage() {
                 title={<>The Infrastructure Of <br className="hidden md:block" /> <span className="text-[#3b82f6]">High-Growth</span> Business.</>}
                 subtitle="We don't just provide services. We engineer the technical foundations that allow global enterprises to scale without limits."
                 image="/img-hero-cybersec.png"
+            >
             </PageHero>
 
             {/* Services Grid Section (The one we redesigned to be anti-box) */}
